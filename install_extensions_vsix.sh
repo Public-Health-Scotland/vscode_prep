@@ -9,7 +9,6 @@ URLS=(
   "https://open-vsx.org/api/esbenp/prettier-vscode/11.0.0/file/esbenp.prettier-vscode-11.0.0.vsix"
   "https://open-vsx.org/api/mechatroner/rainbow-csv/3.3.0/file/mechatroner.rainbow-csv-3.3.0.vsix"
   "https://open-vsx.org/api/eamodio/gitlens/2025.4.705/file/eamodio.gitlens-2025.4.705.vsix"
-  "https://open-vsx.org/api/wix/vscode-import-cost/3.3.0/file/wix.vscode-import-cost-3.3.0.vsix"
   "https://open-vsx.org/api/formulahendry/code-runner/0.12.2/file/formulahendry.code-runner-0.12.2.vsix"
   "https://open-vsx.org/api/johnpapa/vscode-peacock/4.2.2/file/johnpapa.vscode-peacock-4.2.2.vsix"
 )
