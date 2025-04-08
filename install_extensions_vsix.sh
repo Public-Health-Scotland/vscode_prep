@@ -1,7 +1,7 @@
 !/bin/bash
- echo "Important extensions for VSCode"
+echo "Important extensions for VSCode"
 
- # URLs of the VSIX files
+# URLs of the VSIX files
 URLS=(
   "https://open-vsx.org/api/ms-python/python/2024.14.1/file/ms-python.python-2024.14.1.vsix"
   "https://open-vsx.org/api/ms-toolsai/jupyter/2024.8.1/file/ms-toolsai.jupyter-2024.8.1.vsix"
