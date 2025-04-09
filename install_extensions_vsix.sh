@@ -11,6 +11,8 @@ URLS=(
   "https://open-vsx.org/api/eamodio/gitlens/2025.4.705/file/eamodio.gitlens-2025.4.705.vsix"
   "https://open-vsx.org/api/formulahendry/code-runner/0.12.2/file/formulahendry.code-runner-0.12.2.vsix"
   "https://open-vsx.org/api/johnpapa/vscode-peacock/4.2.2/file/johnpapa.vscode-peacock-4.2.2.vsix"
+  "https://open-vsx.org/api/REditorSupport/r/2.8.4/file/REditorSupport.r-2.8.4.vsix"
+  "https://open-vsx.org/api/posit/shiny/1.1.0/file/posit.shiny-1.1.0.vsix"
 )
 
 # Download and install each VSIX file
