@@ -56,31 +56,31 @@ These packages are the most popular and you can customise your own requirements.
 - python-dotenv is useful when you want to separate sensitive data like usernames, password and others
 
 # Frequently asked questions
+**How can I use the vscode-icons?**
+- Go to the left hand side bar and click on extensions. Then, click on the vscode-icons, click on set file icon theme and finally click on VSCode icons.
+![alt text](./img/image-6.png)
+
 **How do I navigate to a folder on the stats drive to open a file?**
 - It is easy if you create a shortcut (symbolic lik). You need to open a termina and run this command: ln -s /conf/my_path /mnt/homes/your_user/name_for_your_shortcut
 - You must initialise your VSCode and go to the menu (top left) or simply press ctrl + k + o. I recommend opening a folder because projects need to be organised, and you can easily access all those files in the Explorer tab.
+- If you have a venv you have to open your folder, open a terminal and activate your venv.
 
 **How do I specify where I want to save a script?**
-If you previously opened a folder, you can add files in the same folder using the Explorer tab. There are two options (new folder and new file). You can add .py (normal scripts) or .ipynb (jupyter notebook).
+- If you previously opened a folder, you can add files in the same folder using the Explorer tab. There are two options (new folder and new file). You can add .py (normal scripts) or .ipynb (jupyter notebook).
 ![alt text](./img/image.png)
 
 **Is there an environment like there is with R where I can see what I've created?**
-If you are running a .ipynb file extension you can use Jupyter variable windows. You should go to the menu (top left) and select terminal – new terminal. After that, you click on Jupyter variables tab.
+- If you are running a .ipynb file extension you can use Jupyter variable windows. You should go to the menu (top left) and select terminal – new terminal. After that, you click on Jupyter variables tab.
 ![alt text](./img/image-1.png)
-
-You can use the extension code runner to run chunks of code. You need to select the lines of code and choose "run code" on the right-click menu or press ctrl + alt + n
+- You can use the extension code runner to run chunks of code. You need to select the lines of code and choose "run code" on the right-click menu or press ctrl + alt + n
 ![alt text](./img/image-2.png)
 
 **How can I use Peacock?**
-If you already opened your project you need to press ctrl + shift + p and search "Peacock Enter a color". You can type the color name like blue or you can type the hexadecimal color code "#42b883". Finally press enter and you will see the color. This functionality is useful when you have more than 1 environment opened.
+- If you already opened your project you need to press ctrl + shift + p and search "Peacock Enter a color". You can type the color name like blue or you can type the hexadecimal color code "#42b883". Finally press enter and you will see the color. This functionality is useful when you have more than 1 environment opened.
 ![alt text](./img/image-3.png)
 
-How can I use JSON crack extension?
-If you have a JSON file in your project and you can see the structure in a easy way, you neeed to open the file and go to the right-hand side corner. Press the JC icon:
+**How can I use JSON crack extension?**
+- If you have a JSON file in your project and you can see the structure in a easy way, you neeed to open the file and go to the right-hand side corner. Press the JC icon:
 ![alt text](./img/image-4.png)
-You will have a result like this:
+- You will have a result like this:
 ![alt text](./img/image-5.png)
-
-How can I use the vscode-icons?
-Go to the left hand side bar and click on extensions. Then, click on the vscode-icons, click on set file icon theme and finally click on VSCode icons.
-![alt text](./img/image-6.png)
