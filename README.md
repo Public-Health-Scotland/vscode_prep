@@ -1,7 +1,8 @@
 # **vscode_prep**
-This repo helps to prepare your vscode in the new Posit
+This repo helps to prepare your vscode (Python and/or R) in the new Posit.
 
 ## There are some important packages to make vscode a powerfull tool
+You can modify “install_extensions_vsix.sh” depending on your needs
 - ms-python.python (Needed for Python)
 - ms-toolsai.jupyter (Needed for Jupyter Notebooks)
 - vscode-icons-team (It improves vscode icons for files in a friendly way)
@@ -55,6 +56,26 @@ These packages are the most popular and you can customise your own requirements.
 - duckdb is a powerfull embedded database for analytical purposes
 - geopandas is powerfull when working with maps
 - python-dotenv is useful when you want to separate sensitive data like usernames, password and others
+
+## For those who prefer conda environments
+- Use your vscode or R studio terminal to download miniconda
+wget -P /mnt/homes/your_user/ https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+- Give execution permission to the script
+chmod +x /mnt/homes/your_user/Miniconda3-latest-Linux-x86_64.sh
+- run the script file (Follow the installation steps)
+bash /mnt/homes/your_user/Miniconda3-latest-Linux-x86_64.sh
+- activate your base conda
+source /mnt/homes/your_user/miniconda3/bin/activate 
+- You will be able to create your conda environment (you can directly add packages to the creation command)
+conda create -n envtest python=3.11.9 pandas=2.2.3
+or
+conda create -n envtest python=3.11.9
+- You should activate your env (one of them). You will see your env name between parentheses.
+conda activate envtest
+- You can install more packages
+conda install pandas=2.2.3
+- Check your packages
+conda list
 
 # Frequently asked questions
 **How can I use the vscode-icons?**
