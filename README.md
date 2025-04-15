@@ -9,9 +9,10 @@ This repo helps to prepare your vscode in the new Posit
 - rainbow-csv (It helps to see your CSV files in a nicer way)
 - gitlens (It gives you more details about you GitHub repo)
 - code-runner (Powerfull tool to run chunks of code)
-- vscode-peacock (Helpful when you have many vscode windows, you can give a specific colour to quickly recognise them)
+- anaconda-extension-pack (Extension for conda environments)
 - r (Support for R language)
 - shiny (Support for shiny projects)
+- vscode-peacock (Helpful when you have many vscode windows, you can give a specific colour to quickly recognise them)
 
 ## How to run this bash
 - Open a terminal on vscode (ctrl + shift + ')
