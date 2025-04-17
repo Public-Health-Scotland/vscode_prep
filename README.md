@@ -1,8 +1,8 @@
 # **vscode_prep**
 This repo helps to prepare your vscode (Python and/or R) in the new Posit.
 
-## There are some important packages to make vscode a powerfull tool
-You can modify “install_extensions_vsix.sh” depending on your needs
+## There are some important extensions to make vscode a powerfull tool
+You can modify the “install_extensions_vsix.sh” file depending on your needs. These are the most used extensions you can file in the script:
 - ms-python.python (Needed for Python)
 - ms-toolsai.jupyter (Needed for Jupyter Notebooks)
 - vscode-icons-team (It improves vscode icons for files in a friendly way)
@@ -16,9 +16,11 @@ You can modify “install_extensions_vsix.sh” depending on your needs
 - vscode-peacock (Helpful when you have many vscode windows, you can give a specific colour to quickly recognise them)
 
 ## How to run this bash
-- Open a terminal on vscode (ctrl + shift + ')
-- Make shure “install_extensions_vsix.sh” has executable permissions (ls -l install_extensions_vsix.sh). You should see "x" on the left hand side.
-- Execute in your terminal: ./install_extensions_vsix.sh
+- Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
+- Make shure “install_extensions_vsix.sh” has executable permissions (ls -l /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh). You should see "x" on the left hand side.
+![alt text](./img/image.png)
+- If you cannot see the x you should change the permissions using chmod +x /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh
+- Execute in your terminal: bash /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh
 - There are some other extensions like copilot, intellicode and jsoncrack available but they are not part of the bash script. You can install with this command: /usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server --install-extension ./*.vsix
 
 ## Python venv creation
