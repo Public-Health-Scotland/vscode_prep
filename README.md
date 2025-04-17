@@ -18,7 +18,7 @@ You can modify the “install_extensions_vsix.sh” file depending on your needs
 ## How to run this bash
 - Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
 - Make shure “install_extensions_vsix.sh” has executable permissions (ls -l /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh). You should see "x" on the left hand side.
-![alt text](./img/image.png)
+![alt text](./img/image-7.png)
 - If you cannot see the x you should change the permissions using chmod +x /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh
 - Execute in your terminal: bash /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh
 - There are some other extensions like copilot, intellicode and jsoncrack available but they are not part of the bash script. You can install with this command: /usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server --install-extension ./*.vsix
