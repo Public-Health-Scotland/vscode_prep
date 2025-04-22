@@ -38,7 +38,7 @@ You will have many ways to create an venv depending on your Python base (choose 
 - The vscode window will load your empty folder
 - It's time to activate your personal venv. It needs to be activated by terminal. You have to open a termina (ctrl + shift + ')
 - You need to remember you venv folder name: source /mnt/homes/your_user/myenv/bin/activate
-- You need to update your pip which helps to download new packages: pip install --upgrade
+- You need to update your pip which helps to download new packages: pip install --upgrade pip
 - You can install required packages using a requirements.txt to facilitate the process: pip install -r path/requirements.txt
 - It is important to know your packages versions for compatibility purposes. It is also important to make sure if they are from trusted sources and regularly updated: https://pypi.org/
 - This step is required if you installed the JupyterLab package: python -m ipykernel install --user --name=myenv --display-name "Python (myenv)"
