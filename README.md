@@ -17,31 +17,30 @@ You can modify the “install_extensions_vsix.sh” file depending on your needs
 
 ## How to run this bash
 - Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
-- Make shure “install_extensions_vsix.sh” has executable permissions (ls -l /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh). You should see "x" on the left hand side.
+- Make shure “install_extensions_vsix.sh” has executable permissions (`ls -l /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh)`. You should see "x" on the left hand side.
 ![alt text](./img/image-7.png)
-- If you cannot see the x you should change the permissions using chmod +x /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh
-- Execute in your terminal: bash /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh
-- There are some other extensions like copilot, intellicode and jsoncrack available but they are not part of the bash script. You can install with this command: /usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server --install-extension ./*.vsix
+- If you cannot see the x you should change the permissions using `chmod +x /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh`
+- Execute in your terminal: `bash /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh`
+- (Optional) There are some other extensions like copilot, intellicode and jsoncrack available but they are not part of the bash script. You can install with this command: `/usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server --install-extension ./*.vsix`
 
 ## Python venv creation
-You can use venv to create environments (private package container). These are the steps:
+You can use venv to create environments (private package container). It will depends on your Python version needs. You can create as many venv as you need. These are the steps:
 - Open a terminal on vscode (ctrl + shift + ')
-You will have many ways to create an venv depending on your Python base (choose one of these options):
-- python -m venv /mnt/homes/your_user/myenv (this command will create an environment called myenv using the default Python 3.13.0)
-- /opt/python/3.12.6/bin/python3.12 -m venv /mnt/homes/your_user/myenv (this command will create an environment called myenv using Python 3.12.6)
-- /opt/python/3.11.10/bin/python3.11 -m venv /mnt/homes/your_user/myenv (this command will create an environment called myenv using Python 3.11.10)
-- It is important to know the Python version end of support: https://devguide.python.org/versions/
+- This command will create an environment called myenv using the default Python 3.13.0: `python -m venv /mnt/homes/your_user/myenv`
+- This command will create an environment called myenv using Python 3.12.6: `/opt/python/3.12.6/bin/python3.12 -m venv /mnt/homes/your_user/myenv`
+- This command will create an environment called myenv using Python 3.11.10: `/opt/python/3.11.10/bin/python3.11 -m venv /mnt/homes/your_user/myenv`
+- It is important to know Python versions end of support: https://devguide.python.org/versions/
 
 ## First steps to create your python environment
-- You can create a folder using: mkdir /mnt/homes/gatzos01/demo01
+- You can create a folder using: `mkdir /mnt/homes/gatzos01/demo01`
 - Press ctrl + k + o and find your new folder, then press ok
 - The vscode window will load your empty folder
 - It's time to activate your personal venv. It needs to be activated by terminal. You have to open a termina (ctrl + shift + ')
-- You need to remember you venv folder name: source /mnt/homes/your_user/myenv/bin/activate
-- You need to update your pip which helps to download new packages: pip install --upgrade pip
-- You can install required packages using a requirements.txt to facilitate the process: pip install -r path/requirements.txt
+- You need to remember you venv folder name, run this command to activate it: `source /mnt/homes/your_user/myenv/bin/activate`
+- You need to update your pip which helps to download new packages: `pip install --upgrade pip`
+- You can install required packages using a requirements.txt to facilitate the process: `pip install -r path/requirements.txt`
 - It is important to know your packages versions for compatibility purposes. It is also important to make sure if they are from trusted sources and regularly updated: https://pypi.org/
-- This step is required if you installed the JupyterLab package: python -m ipykernel install --user --name=myenv --display-name "Python (myenv)"
+- This step is required if you installed the JupyterLab package: `python -m ipykernel install --user --name=myenv --display-name "Python (myenv)"`
 - You can refresh your vscode to make sure your venv has been detected. Press ctrl + shift + p and search Developer reload window
 - When you work with jupyter notebooks (.ipynb), make sure to click on the select kernel (dropdown right hand side) and choose your environment name.
 - If your project only have (.py) Python scripts, make sure to select the proper interpreter. Press ctrl + shift + p and search Python select interpreter
@@ -60,24 +59,14 @@ These packages are the most popular and you can customise your own requirements.
 - python-dotenv is useful when you want to separate sensitive data like usernames, password and others
 
 ## For those who prefer conda environments
-- Use your vscode or R studio terminal to download miniconda
-wget -P /mnt/homes/your_user/ https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-- Give execution permission to the script
-chmod +x /mnt/homes/your_user/Miniconda3-latest-Linux-x86_64.sh
-- run the script file (Follow the installation steps)
-bash /mnt/homes/your_user/Miniconda3-latest-Linux-x86_64.sh
-- activate your base conda
-source /mnt/homes/your_user/miniconda3/bin/activate 
-- You will be able to create your conda environment (you can directly add packages to the creation command)
-conda create -n envtest python=3.11.9 pandas=2.2.3
-or
-conda create -n envtest python=3.11.9
-- You should activate your env (one of them). You will see your env name between parentheses.
-conda activate envtest
-- You can install more packages
-conda install pandas=2.2.3
-- Check your packages
-conda list
+- Use your vscode or R studio terminal to download miniconda: `wget -P /mnt/homes/your_user/ https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
+- Give execution permission to the script: `chmod +x /mnt/homes/your_user/Miniconda3-latest-Linux-x86_64.sh`
+- Run the script file (Follow the installation steps): `bash /mnt/homes/your_user/Miniconda3-latest-Linux-x86_64.sh`
+- Activate your base conda: `source /mnt/homes/your_user/miniconda3/bin/activate `
+- You will be able to create your conda environment (you can directly add packages to the creation command): `conda create -n envtest python=3.11.9 pandas=2.2.3` or `conda create -n envtest python=3.11.9`
+- You should activate your env (one of them). You will see your env name between parentheses: `conda activate envtest`
+- You can install more packages (Your conda env must be activated): `conda install pandas=2.2.3`
+- Check your packages: `conda list`
 
 ## **Git autocompletion in Terminal**
 If you want to add git autocompletion command feature in your terminal you can follow the following steps:
