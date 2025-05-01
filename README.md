@@ -79,7 +79,17 @@ conda install pandas=2.2.3
 - Check your packages
 conda list
 
-# Frequently asked questions
+## **Git autocompletion in Terminal**
+If you want to add git autocompletion command feature in your terminal you can follow the following steps:
+- Open a terminal using ctrl + alt + ' (if there is no other opened)
+- Run this command to download the feature script
+curl -o ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+- Run this command to Add the feature to your user bash settings
+echo "source ~/.git-completion.bash" >> ~/.bashrc
+- Run this code to apply the changes
+`source ~/.bashrc`
+
+# **Frequently asked questions**
 **How can I use the vscode-icons?**
 - Go to the left hand side bar and click on extensions. Then, click on the vscode-icons, click on set file icon theme and finally click on VSCode icons.
 ![alt text](./img/image-6.png)
