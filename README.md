@@ -21,7 +21,7 @@ There are some extensions which will help to improve your development experience
 ![alt text](./img/image-7.png)
 - If you cannot see the x you should change the permissions using `chmod +x /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh`
 - Execute in your terminal: `bash /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh`
-- (Optional) There are some other extensions like copilot, intellicode and jsoncrack available but they are not part of the bash script. You can install with this command: `/usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server --install-extension ./*.vsix`
+- (Optional) There are some other extensions like GitHub copilot, intellicode and jsoncrack available but they are not part of the bash script. You can install with this command: `/usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server --install-extension ./*.vsix`
 
 ## Python venv creation
 You can use venv to create environments (private package container). It will depends on your Python version needs. You can create as many venv as you need. These are the steps:
