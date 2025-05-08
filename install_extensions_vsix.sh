@@ -14,7 +14,7 @@ URLS=(
   "https://open-vsx.org/api/REditorSupport/r/2.8.4/file/REditorSupport.r-2.8.4.vsix"
   "https://open-vsx.org/api/posit/shiny/1.1.0/file/posit.shiny-1.1.0.vsix"
   "https://open-vsx.org/api/ms-python/anaconda-extension-pack/1.0.1/file/ms-python.anaconda-extension-pack-1.0.1.vsix"
-  "https://open-vsx.org/api/johnpapa/vscode-peacock/4.2.2/file/johnpapa.vscode-peacock-4.2.2.vsix"
+  "https://open-vsx.org/api/ms-python/autopep8/2024.2.0/file/ms-python.autopep8-2024.2.0.vsix"
 )
 
 # Download and install each VSIX file

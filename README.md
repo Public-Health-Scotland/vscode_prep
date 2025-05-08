@@ -1,19 +1,19 @@
 # **vscode_prep**
 This repo helps to prepare your vscode (Python and/or R) in the new Posit.
 
-## There are some important extensions to make vscode a powerfull tool
-You can modify the “install_extensions_vsix.sh” file depending on your needs. These are the most used extensions you can file in the script:
-- ms-python.python (Needed for Python)
-- ms-toolsai.jupyter (Needed for Jupyter Notebooks)
-- vscode-icons-team (It improves vscode icons for files in a friendly way)
-- prettier-vscode (It helps to format your scripts)
-- rainbow-csv (It helps to see your CSV files in a nicer way)
-- gitlens (It gives you more details about you GitHub repo)
-- code-runner (Powerfull tool to run chunks of code)
-- anaconda-extension-pack (Extension for conda environments)
-- r (Support for R language)
-- shiny (Support for shiny projects)
-- vscode-peacock (Helpful when you have many vscode windows, you can give a specific colour to quickly recognise them)
+## Extensions for vscode
+There are some extensions which will help to improve your development experience. The script called “install_extensions_vsix.sh” will automate the installation process. You can modify this file depending on your needs. These are the most used extensions you can find in the script:
+- ms-python.python: Python support
+- ms-toolsai.jupyter: Jupyter Notebooks support
+- vscode-icons-team: It improves vscode icons for files in a friendly way
+- prettier-vscode: Formatter for many type of scripts
+- rainbow-csv: It helps to see your CSV files in a nicer way
+- gitlens: It gives you more details about you GitHub repo
+- code-runner: Powerfull tool to run chunks of code
+- anaconda-extension-pack: Extension for conda environments
+- r: Support for R language
+- shiny: Support for shiny projects
+- autopep8: Formatter specifically for Python
 
 ## How to run this bash
 - Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
@@ -101,12 +101,16 @@ If you want to add git autocompletion command feature in your terminal you can f
 - You can use the extension code runner to run chunks of code. You need to select the lines of code and choose "run code" on the right-click menu or press ctrl + alt + n
 ![alt text](./img/image-2.png)
 
-**How can I use Peacock?**
-- If you already opened your project you need to press ctrl + shift + p and search "Peacock Enter a color". You can type the color name like blue or you can type the hexadecimal color code "#42b883". Finally press enter and you will see the color. This functionality is useful when you have more than 1 environment opened.
-![alt text](./img/image-3.png)
-
 **How can I use JSON crack extension?**
 - If you have a JSON file in your project and you can see the structure in a easy way, you neeed to open the file and go to the right-hand side corner. Press the JC icon:
 ![alt text](./img/image-4.png)
 - You will have a result like this:
 ![alt text](./img/image-5.png)
+
+**How can I format my files?**
+- Tou need to select all your code using `ctrl + a`
+- Right clic and choose Format document with
+- If it's a Python file, you will see the option "autopep8". Otherwise, you will see Prettier. 
+- Clic on it and you will see your script being formatted.
+![alt text](./img/image-8.png)
+![alt text](./img/image-9.png)
