@@ -2,9 +2,12 @@
 This repo helps to prepare your vscode (Python and/or R) in the new Posit.
 
 ## Extensions for vscode
-There are some extensions which will help to improve your development experience. The script called “install_extensions_vsix.sh” will automate the installation process. You can modify this file depending on your needs. These are the most used extensions you can find in the script:
+There are some extensions which will help to improve your development experience. The script called “install_extensions.sh” will automate the installation process. You can modify this file depending on your needs. These are the most used extensions you can find in the script:
 - ms-python.python: Python support
+- ms-python.debugpy: Python debbuger
+- autodocstring: autogenerate functions documentation
 - ms-toolsai.jupyter: Jupyter Notebooks support
+- jupyter-renderers: improves plot support in notebooks
 - vscode-icons-team: It improves vscode icons for files in a friendly way
 - prettier-vscode: Formatter for many type of scripts
 - rainbow-csv: It helps to see your CSV files in a nicer way
@@ -17,11 +20,11 @@ There are some extensions which will help to improve your development experience
 
 ## How to run this bash
 - Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
-- Make shure “install_extensions_vsix.sh” has executable permissions (`ls -l /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh)`. You should see "x" on the left hand side.
+- Make shure “install_extensions.sh” has executable permissions (`ls -l /mnt/homes/your_user/vscode_prep/install_extensions.sh)`. You should see "x" on the left hand side.
 ![alt text](./img/image-7.png)
-- If you cannot see the x you should change the permissions using `chmod +x /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh`
-- Execute in your terminal: `bash /mnt/homes/your_user/vscode_prep/install_extensions_vsix.sh`
-- (Optional) There are some other extensions like GitHub copilot, intellicode and jsoncrack available but they are not part of the bash script. You can install with this command: `/usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server --install-extension ./*.vsix`
+- If you cannot see the x you should change the permissions using `chmod +x /mnt/homes/your_user/vscode_prep/install_extensions.sh`
+- Execute in your terminal: `bash /mnt/homes/your_user/vscode_prep/install_extensions.sh`
+- (More extensions) There are some other extensions installers in this repo. They are Pylance, GitHub copilot, intellicode, intellicode api and jsoncrack. They are installed from this folder because they were downloaded from the Oficial microsoft marketplace. They are part of the bash script install_extensions.sh section offline installers.
 
 ## Python venv creation
 You can use venv to create environments (private package container). It will depends on your Python version needs. You can create as many venv as you need. These are the steps:
@@ -114,3 +117,14 @@ If you want to add git autocompletion command feature in your terminal you can f
 - Clic on it and you will see your script being formatted.
 ![alt text](./img/image-8.png)
 ![alt text](./img/image-9.png)
+
+**How can I activate Pylance features?**
+- You need to find on setting. Press ctr + ,
+- Search Pylance and click in this option:
+![alt text](./img/image-10.png)
+- You can activate Function return type clicking on the check box
+![alt text](./img/image-11.png)
+- You can activate Variable types
+![alt text](./img/image-12.png)
+- You can select standard option for Type checking mode
+![alt text](./img/image-13.png)
