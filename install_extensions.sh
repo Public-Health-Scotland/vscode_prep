@@ -25,7 +25,6 @@ URLS=(
 
 for URL in "${URLS[@]}"; do
   SAVE_LOCATION="/tmp/$(basename $URL)"
-  echo "Downloading $URL to $SAVE_LOCATION"
   curl $URL -L -o $SAVE_LOCATION
   echo "Installing $SAVE_LOCATION"
   /usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server --install-extension $SAVE_LOCATION
@@ -37,7 +36,6 @@ for file in ./offline_installers/*.vsix
 do
   if [ -e "$file" ]
   then
-    echo "Extension: $file"
     /usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server --install-extension $file
     echo "Installed: $file"
   else
