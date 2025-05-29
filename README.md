@@ -85,6 +85,10 @@ If you want to add git autocompletion command feature in your terminal you can f
 `source ~/.bashrc`
 
 # **Frequently asked questions**
+**Can I use question mark to ask about functions?**
+- You can use question mark (?) and double question mark (??) after the function to get some informatio like this:
+![alt text](./img/image-14.png)
+Only available in Jupyter notebooks
 **How can I use the vscode-icons?**
 - Go to the left hand side bar and click on extensions. Then, click on the vscode-icons, click on set file icon theme and finally click on VSCode icons.
 ![alt text](./img/image-6.png)
