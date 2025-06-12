@@ -108,6 +108,13 @@ Only available in Jupyter notebooks
 - You can use the extension code runner to run chunks of code. You need to select the lines of code and choose "run code" on the right-click menu or press ctrl + alt + n
 ![alt text](./img/image-2.png)
 
+**Can I export a Jupyter notebook in HTML format?**
+- Yes, you can. Press ctr + shift + p and search Export to html
+![alt text](./img/image-15.png)
+- If you are working with Plotly you will need to add these lines of code at the beginnin of your Notebook: 
+`import plotly.io as pio
+pio.renderers.default = 'notebook_connected'`
+
 **How can I use JSON crack extension?**
 - If you have a JSON file in your project and you can see the structure in a easy way, you neeed to open the file and go to the right-hand side corner. Press the JC icon:
 ![alt text](./img/image-4.png)
