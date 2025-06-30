@@ -7,7 +7,7 @@ print(df.head(3))
 print(df.describe())
 
 
-def calc_sum(a: int, b: int):
+def calc_sum(a: int, b: int) -> int:
     print(f"element 1: {a}")
     return a + b
 
@@ -34,7 +34,7 @@ y = calc_div(5, 2)
 print("Result is", y)
 
 
-def calc_mul(a: int, b: int):
+def calc_mul(a: int, b: int) -> int:
     """_summary_
 
     Args:

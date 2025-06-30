@@ -5,6 +5,8 @@ This repo helps to prepare your vscode (Python and/or R) in the new Posit.
 There are some extensions which will help to improve your development experience. The script called “install_extensions.sh” will automate the installation process. You can modify this file depending on your needs. These are the most used extensions you can find in the script:
 - ms-python.python: Python support
 - ms-python.debugpy: Python debbuger
+- ms-pyright.pyright: Fast static type checker for Python
+- quarto.quarto: Support for Quarto documents and publishing
 - autodocstring: autogenerate functions documentation
 - ms-toolsai.jupyter: Jupyter Notebooks support
 - jupyter-renderers: improves plot support in notebooks
@@ -15,7 +17,7 @@ There are some extensions which will help to improve your development experience
 - code-runner: Powerfull tool to run chunks of code
 - Air - R Language Support: Support for R language
 - shiny: Support for shiny projects
-- Ruff: Formatter for Python and other formats
+- Ruff: Fast Python linter and formatter
 - GitHub Copilot: Useful and free tool to autocomplete code
 
 ## How to run this bash
