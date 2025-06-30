@@ -13,10 +13,10 @@ There are some extensions which will help to improve your development experience
 - rainbow-csv: It helps to see your CSV files in a nicer way
 - gitlens: It gives you more details about you GitHub repo
 - code-runner: Powerfull tool to run chunks of code
-- anaconda-extension-pack: Extension for conda environments
-- r: Support for R language
+- Air - R Language Support: Support for R language
 - shiny: Support for shiny projects
-- autopep8: Formatter specifically for Python
+- Ruff: Formatter for Python and other formats
+- GitHub Copilot: Useful and free tool to autocomplete code
 
 ## How to run this bash
 - Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
@@ -89,6 +89,7 @@ If you want to add git autocompletion command feature in your terminal you can f
 - You can use question mark (?) and double question mark (??) after the function to get some informatio like this:
 ![alt text](./img/image-14.png)
 Only available in Jupyter notebooks
+
 **How can I use the vscode-icons?**
 - Go to the left hand side bar and click on extensions. Then, click on the vscode-icons, click on set file icon theme and finally click on VSCode icons.
 ![alt text](./img/image-6.png)
@@ -124,18 +125,7 @@ pio.renderers.default = 'notebook_connected'`
 **How can I format my files?**
 - Tou need to select all your code using `ctrl + a`
 - Right clic and choose Format document with
-- If it's a Python file, you will see the option "autopep8". Otherwise, you will see Prettier. 
+- If it's a Python file, you will see the option "Ruff". Otherwise, you will see Prettier. 
 - Clic on it and you will see your script being formatted.
 ![alt text](./img/image-8.png)
 ![alt text](./img/image-9.png)
-
-**How can I activate Pylance features?**
-- You need to find on setting. Press ctr + ,
-- Search Pylance and click in this option:
-![alt text](./img/image-10.png)
-- You can activate Function return type clicking on the check box
-![alt text](./img/image-11.png)
-- You can activate Variable types
-![alt text](./img/image-12.png)
-- You can select standard option for Type checking mode
-![alt text](./img/image-13.png)
