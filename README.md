@@ -18,7 +18,7 @@ There are some extensions which will help to improve your development experience
 - Air - R Language Support: Support for R language
 - shiny: Support for shiny projects
 - Ruff: Fast Python linter and formatter
-- GitHub Copilot: Useful and free tool to autocomplete code
+- GitHub Copilot 1.250.0: Useful and free tool to autocomplete code (vscode 1.93 is not longer compatible)
 
 ## How to run this bash
 - Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
