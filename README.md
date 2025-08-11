@@ -43,7 +43,10 @@ You can use venv to create environments (private package container). It will dep
 - It's time to activate your personal venv. It needs to be activated by terminal. You have to open a termina (ctrl + shift + ')
 - You need to remember you venv folder name, run this command to activate it: `source /mnt/homes/your_user/myenv/bin/activate`
 - You need to update your pip which helps to download new packages: `pip install --upgrade pip wheel`
-- You can install required packages using a requirements.txt to facilitate the process: `pip install -r path/requirements.txt`
+- You have 2 options to install required packages (make sure your python environment is already activated): 
+    1) Using a requirements.txt to facilitate the process: `pip install -r path/requirements.txt`
+    2) Installing one package at time using the command in terminal: `pip install pandas==2.3.1`
+    Note: If you don't activate your python environment you will probably install your package in the main Python installation.
 - It is important to know your packages versions for compatibility purposes. It is also important to make sure if they are from trusted sources and regularly updated: https://pypi.org/
 - This step is required if you installed the JupyterLab package: `python -m ipykernel install --user --name=myenv --display-name "Python (myenv)"`
 - You can refresh your vscode to make sure your venv has been detected. Press ctrl + shift + p and search Developer reload window
@@ -51,17 +54,20 @@ You can use venv to create environments (private package container). It will dep
 - If your project only have (.py) Python scripts, make sure to select the proper interpreter. Press ctrl + shift + p and search Python select interpreter
 
 ### Python packages on requirements.txt
-These packages are the most popular and you can customise your own requirements.txt file depending on your project needs.
+These packages are the most popular and you can customise your own **requirements.tx**t file depending on your project needs.
+- python-dotenv is useful when you want to separate sensitive data like usernames, password and others
 - pandas is useful for data manipulation (dataframes)
-- polars is faster than Pandas for large datasets
 - plotly is powerfull for data visualisation (bar, line and other plots)
 - scikit-learn is useful for machine learning models (decision tree, random forest, support vector machine and others)
-- jupyterlab is needed when working with Jupyter notebooks
-- ipywidgets helps to create controls in jupyter notebooks like dropdownlists, radio buttons, buttons and others
 - pillow is needed when working with images
-- duckdb is a powerfull embedded database for analytical purposes
+- jupyterlab is needed when working with Jupyter notebooks
+
+You can install more packages later. For example:
 - geopandas is powerfull when working with maps
-- python-dotenv is useful when you want to separate sensitive data like usernames, password and others
+- polars is faster than Pandas for large datasets
+- ipywidgets helps to create controls in jupyter notebooks like dropdownlists, radio buttons, buttons and others
+- duckdb is a powerfull embedded database for analytical purposes
+- tensorflow is very popular for neural networks (deep learning)
 
 ## For those who prefer conda environments
 - Use your vscode or R studio terminal to download miniconda: `wget -P /mnt/homes/your_user/ https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
