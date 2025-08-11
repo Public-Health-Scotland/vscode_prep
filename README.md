@@ -46,7 +46,9 @@ You can use venv to create environments (private package container). It will dep
 - You have 2 options to install required packages (make sure your python environment is already activated): 
     1) Using a requirements.txt to facilitate the process: `pip install -r path/requirements.txt`
     2) Installing one package at time using the command in terminal: `pip install pandas==2.3.1`
+    
     Note: If you don't activate your python environment you will probably install your package in the main Python installation.
+    
 - It is important to know your packages versions for compatibility purposes. It is also important to make sure if they are from trusted sources and regularly updated: https://pypi.org/
 - This step is required if you installed the JupyterLab package: `python -m ipykernel install --user --name=myenv --display-name "Python (myenv)"`
 - You can refresh your vscode to make sure your venv has been detected. Press ctrl + shift + p and search Developer reload window
