@@ -21,6 +21,7 @@ URLS=(
   "https://open-vsx.org/api/quarto/quarto/1.123.0/file/quarto.quarto-1.123.0.vsix"
   "https://open-vsx.org/api/ms-pyright/pyright/1.1.400/file/ms-pyright.pyright-1.1.400.vsix"
   "https://openvsxorg.blob.core.windows.net/resources/charliermarsh/ruff/linux-x64/2025.24.0/charliermarsh.ruff-2025.24.0@linux-x64.vsix"
+  "https://open-vsx.org/api/posit/publisher/linux-x64/1.23.4/file/posit.publisher-1.23.4@linux-x64.vsix"
 )
 
 for URL in "${URLS[@]}"; do
