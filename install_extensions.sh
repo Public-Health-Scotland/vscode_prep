@@ -14,7 +14,7 @@ URLS=(
   "https://open-vsx.org/api/vscode-icons-team/vscode-icons/12.13.0/file/vscode-icons-team.vscode-icons-12.13.0.vsix"
   "https://open-vsx.org/api/esbenp/prettier-vscode/11.0.0/file/esbenp.prettier-vscode-11.0.0.vsix"
   "https://open-vsx.org/api/mechatroner/rainbow-csv/3.3.0/file/mechatroner.rainbow-csv-3.3.0.vsix"
-  "https://open-vsx.org/api/eamodio/gitlens/2025.8.505/file/eamodio.gitlens-2025.8.505.vsix"
+  "https://open-vsx.org/api/eamodio/gitlens/2025.10.405/file/eamodio.gitlens-2025.10.405.vsix"
   "https://open-vsx.org/api/formulahendry/code-runner/0.12.2/file/formulahendry.code-runner-0.12.2.vsix"
   "https://openvsxorg.blob.core.windows.net/resources/posit/air-vscode/linux-x64/0.14.0/posit.air-vscode-0.14.0@linux-x64.vsix"
   "https://open-vsx.org/api/posit/shiny/1.1.0/file/posit.shiny-1.1.0.vsix"
