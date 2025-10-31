@@ -7,7 +7,7 @@ URLS=(
   "https://open-vsx.org/api/ms-python/python/2025.16.0/file/ms-python.python-2025.16.0.vsix"
   "https://open-vsx.org/api/ms-python/debugpy/linux-x64/2025.14.1/file/ms-python.debugpy-2025.14.1@linux-x64.vsix"
   "https://open-vsx.org/api/njpwerner/autodocstring/0.6.1/file/njpwerner.autodocstring-0.6.1.vsix"
-  "https://open-vsx.org/api/ms-toolsai/jupyter/2025.9.1/file/ms-toolsai.jupyter-2025.9.1.vsix"
+  "https://open-vsx.org/api/ms-toolsai/jupyter/2025.7.0/file/ms-toolsai.jupyter-2025.7.0.vsix"
   "https://open-vsx.org/api/ms-toolsai/jupyter-renderers/1.0.19/file/ms-toolsai.jupyter-renderers-1.0.19.vsix"
   "https://open-vsx.org/api/ms-toolsai/vscode-jupyter-slideshow/0.1.6/file/ms-toolsai.vscode-jupyter-slideshow-0.1.6.vsix"
   "https://open-vsx.org/api/vscode-icons-team/vscode-icons/12.15.0/file/vscode-icons-team.vscode-icons-12.15.0.vsix"
@@ -22,7 +22,6 @@ URLS=(
   "https://open-vsx.org/api/charliermarsh/ruff/linux-x64/2025.28.0/file/charliermarsh.ruff-2025.28.0@linux-x64.vsix"
   "https://open-vsx.org/api/posit/shinyuieditor/0.5.0/file/posit.shinyuieditor-0.5.0.vsix"
   "https://open-vsx.org/api/hediet/vscode-drawio/1.6.6/file/hediet.vscode-drawio-1.6.6.vsix"
-  "https://open-vsx.org/api/posit/publisher/linux-x64/1.23.12/file/posit.publisher-1.23.12@linux-x64.vsix"
 )
 
 for URL in "${URLS[@]}"; do
