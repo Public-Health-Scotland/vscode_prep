@@ -10,6 +10,8 @@ URLS=(
   "https://open-vsx.org/api/ms-toolsai/jupyter/2025.7.0/file/ms-toolsai.jupyter-2025.7.0.vsix"
   "https://open-vsx.org/api/ms-toolsai/jupyter-renderers/1.0.19/file/ms-toolsai.jupyter-renderers-1.0.19.vsix"
   "https://open-vsx.org/api/ms-toolsai/vscode-jupyter-slideshow/0.1.6/file/ms-toolsai.vscode-jupyter-slideshow-0.1.6.vsix"
+  "https://open-vsx.org/api/ms-toolsai/vscode-jupyter-cell-tags/0.1.9/file/ms-toolsai.vscode-jupyter-cell-tags-0.1.9.vsix"
+  "https://open-vsx.org/api/ms-toolsai/jupyter-keymap/1.1.2/file/ms-toolsai.jupyter-keymap-1.1.2.vsix"
   "https://open-vsx.org/api/vscode-icons-team/vscode-icons/12.15.0/file/vscode-icons-team.vscode-icons-12.15.0.vsix"
   "https://open-vsx.org/api/esbenp/prettier-vscode/11.0.0/file/esbenp.prettier-vscode-11.0.0.vsix"
   "https://open-vsx.org/api/mechatroner/rainbow-csv/3.3.0/file/mechatroner.rainbow-csv-3.3.0.vsix"

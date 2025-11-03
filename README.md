@@ -1,62 +1,110 @@
 # **vscode_prep**
-This repo helps to prepare your vscode (Python and/or R) in the new Posit.
+This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posit.
+
+## 1. Clone this repo
+- If you want to clone this repo, You will open a vs code session and open a terminal using ctrl + shift + '
+- if you do not want to create you can skip this section. You can create .sh files manually
+- Run the command in terminal `git clone https://github.com/Public-Health-Scotland/vscode_prep.git`
+- Then you have to open your project folder using vs code. Go to the left hand menu and click on the explorer. You will see an Open Folder button. Click that button and you will see a dropdown list. You can click on vscode_prep folder and then click OK
+
+## 2. Clean old extensions
+- You can skip this section if you have never installed any extensions in your vs code
+- You can use uninstall_extensions.sh from this repo in order to remove all extensions. It is recommended if you have previously installed extensions.
+- Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
+- Make shure uninstall_extensions.sh has executable permissions, run this command: `ls -l uninstall_extensions.sh`. You should see "x" on the left hand side permissions file details section.
 
 ## Extensions for vscode
 There are some extensions which will help to improve your development experience. The script called “install_extensions.sh” will automate the installation process. You can modify this file depending on your needs. These are the most used extensions you can find in the script:
-- ms-python.python: Python support
-- ms-python.debugpy: Python debbuger
-- ms-pyright.pyright: Fast static type checker for Python
-- quarto.quarto: Support for Quarto documents and publishing
-- autodocstring: autogenerate functions documentation
-- ms-toolsai.jupyter: Jupyter Notebooks support
-- jupyter-renderers: improves plot support in notebooks
-- vscode-icons-team: It improves vscode icons for files in a friendly way
-- prettier-vscode: Formatter for many type of scripts
-- rainbow-csv: It helps to see your CSV files in a nicer way
-- gitlens: It gives you more details about you GitHub repo
-- code-runner: Powerfull tool to run chunks of code
-- Air - R Language Support: Support for R language
-- shiny: Support for shiny projects
-- Ruff: Fast Python linter and formatter
-- shiny UIEditor: Posit extension to blue print shiny apps.
-- draw.io: useful extension to create workflow diagrams
+
+| Extension          | Description                                      |
+|--------------------|--------------------------------------------------|
+| ms-python.python   | Python support                                   |
+| ms-python.debugpy  | Python debbuger                                  |
+| ms-pyright.pyright | Fast static type checker for Python              | 
+| quarto.quarto      | Support for Quarto documents and publishing      | 
+| autodocstring      | autogenerate functions documentation             | 
+| ms-toolsai.jupyter | Jupyter Notebooks support                        | 
+| jupyter-renderers  | improves plot support in notebooks               | 
+| prettier-vscode    | Formatter for many type of files extensions      | 
+| rainbow-csv        | It helps to see your CSV files in a nicer way    | 
+| gitlens            | It gives you more details about you GitHub repo  | 
+| code-runner        | It gives you more details about you GitHub repo  | 
+| Air - R            | Support for R language                           | 
+| shiny              | Support for shiny projects                       | 
+| Ruff               | Fast Python linter and formatter                 | 
+| shiny UIEditor     | Posit extension to blue print shiny apps.        | 
+| draw.io            | useful extension to create workflow diagrams     | 
 
 ## How to run this bash
 - Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
-- Make shure “install_extensions.sh” has executable permissions (`ls -l /mnt/homes/your_user/vscode_prep/install_extensions.sh)`. You should see "x" on the left hand side.
+- Make shure “install_extensions.sh” has executable permissions `ls -l install_extensions.sh`. You should see "x" on the left hand side permissions file details section.
 ![alt text](./img/image-7.png)
-- If you cannot see the x you should change the permissions using `chmod +x /mnt/homes/your_user/vscode_prep/install_extensions.sh`
-- Execute in your terminal: `bash /mnt/homes/your_user/vscode_prep/install_extensions.sh`
-- (More extensions) There are some other extensions installers in this repo. They are Pylance, GitHub copilot, intellicode, intellicode api and jsoncrack. They are installed from this folder because they were downloaded from the Oficial microsoft marketplace. They are part of the bash script install_extensions.sh section offline installers.
+- If you cannot see the x you should change the permissions using `chmod +x install_extensions.sh`
+- Execute in your terminal: `bash install_extensions.sh`
+- You will see Task completed in your terminal. So, it means everything worked ok.
+- You need to reload your vscode to make sure loading extensions. Press ctrl + shift + p and search Developer reload window
+![alt text](img/image-19.png)
+- (More extensions) There are some other extensions installers in this repo.One of them is jsoncrack. It would be installed from offline_installers folder because it was downloaded from the Oficial microsoft marketplace. This folder content is part of the bash script install_extensions.sh offline section bash file installer.
 
 ## Python venv creation
-You can use venv to create environments (private package container). It will depends on your Python version needs. You can create as many venv as you need. These are the steps:
+You can use venv (similar to renv in R) to create environments (private package container). 
+- If you cloned vscode_prep, you should close vscode_prep and start from the main user path.
+![alt text](img/image-23.png)
+- You can create as many venv as you need and It depends on your Python version needs. 
+- You can create inside your Python project or outside
+- Best practice says it is good to create one venv per project
+- Open a vscode session in Posit Workbench
 - Open a terminal on vscode (ctrl + shift + ')
-- This command will create an environment called myenv using the default Python 3.13.0: `python -m venv /mnt/homes/your_user/myenv`
-- This command will create an environment called myenv using Python 3.12.6: `/opt/python/3.12.6/bin/python3.12 -m venv /mnt/homes/your_user/myenv`
-- This command will create an environment called myenv using Python 3.11.10: `/opt/python/3.11.10/bin/python3.11 -m venv /mnt/homes/your_user/myenv`
-- It is important to know Python versions end of support: https://devguide.python.org/versions/
+- Create a folder for your new project (e.g python_demo). Use the following command in your terminal:
+```
+mkdir python_demo
+```
+- Then you have to open your project folder using vs code. Go to the left hand menu and click on the explorer. You will see an Open Folder button. Click that button and you will see a dropdown list. You can click on your project folder (python_demo)
+![alt text](img/image-16.png)
+- You will see the complete path of your project folder and an OK button, click OK
+![alt text](img/image-17.png)
+- You will be in your project folder ready to work.
+- You can choose one of these commands depending of your Python version need:
 
-## First steps to create your python environment
-- You can create a folder using: `mkdir /mnt/homes/gatzos01/demo01`
-- Press ctrl + k + o and find your new folder, then press ok
-- The vscode window will load your empty folder
-- It's time to activate your personal venv. It needs to be activated by terminal. You have to open a termina (ctrl + shift + ')
-- You need to remember you venv folder name, run this command to activate it: `source /mnt/homes/your_user/myenv/bin/activate`
-- You need to update your pip which helps to download new packages: `pip install --upgrade pip wheel`
-- You have 2 options to install required packages (make sure your python environment is already activated): 
-    1) Using a requirements.txt to facilitate the process: `pip install -r path/requirements.txt`
-    2) Installing one package at time using the command in terminal: `pip install pandas==2.3.1`
+| Python Version | Command (virtual env outside Project Folder)                         | Command (Internal Project Folder)               |
+|----------------|----------------------------------------------------------------------|-------------------------------------------------|
+| 3.13.8         | `python -m venv /mnt/homes/your_user/.venv`                          | `python -m venv .venv`                          |
+| 3.12.12        | `/opt/python/3.12.12/bin/python3 -m venv /mnt/homes/your_user/.venv` | `/opt/python/3.12.12/bin/python3 -m venv .venv` |
+| 3.11.13        | `/opt/python/3.11.13/bin/python3 -m venv /mnt/homes/your_user/.venv` | `/opt/python/3.11.13/bin/python3 -m venv .venv` | 
+| 3.10.19        | `/opt/python/3.10.19/bin/python3 -m venv /mnt/homes/your_user/.venv` | `/opt/python/3.10.19/bin/python3 -m venv .venv` | 
+
+- This command will create an environment called .venv
+- It is important to know Python versions end of support: https://devguide.python.org/versions/
+- It's time to activate your personal venv. It needs to be activated by terminal. You have to open a termina (ctrl + shift + ') if it is not a terminal in the bottom part of the vs code UI
+- You need to remember you venv folder name, run one of these commands to activate it: 
+
+| Command (virtual env outside Project Folder)     | Command (Internal Project Folder) |
+|--------------------------------------------------|-----------------------------------|
+| `source /mnt/homes/your_user/.venv/bin/activate` | `source .venv/bin/activate`       |
+- You will see .venv as part of the terminal line
+![alt text](img/image-18.png)
+
+- You need to update your pip (Python package manager) which helps to download new packages: `pip install --upgrade pip wheel`
+- You have 2 options to install required packages (make sure your python environment is already activated). Best practice says it is important to have requirements.txt file in every Python project folder.
+- Create a requirements.txt file in your python_demo folder
+- Option 1: Using a requirements.txt to facilitate the process: `pip install -r requirements.txt --prefer-binary`
+- Option 2: Installing one package at time using the command in terminal: `pip install pandas==2.3.3 --prefer-binary`
     
     Note: If you don't activate your python environment you will probably install your package in the main Python installation.
     
-- It is important to know your packages versions for compatibility purposes. It is also important to make sure if they are from trusted sources and regularly updated: https://pypi.org/
-- This step is required if you installed the JupyterLab package: `python -m ipykernel install --user --name=myenv --display-name "Python (myenv)"`
-- You can refresh your vscode to make sure your venv has been detected. Press ctrl + shift + p and search Developer reload window
+- It is important to know packages versions for compatibility purposes, who develops this package (trusted sources) and how frequent they are updated: https://pypi.org/
+- You can refresh your vs code to make sure your venv has been detected. Press ctrl + shift + p and search Developer reload window
+
+### If you installed juputerlab in your own environment
 - When you work with jupyter notebooks (.ipynb), make sure to click on the select kernel (dropdown right hand side) and choose your environment name.
+![alt text](img/image-20.png)
+- Click on Python environments
+![alt text](img/image-21.png)
+- Select your local .venv (in this case the project folder environment)
+![alt text](img/image-22.png)
 - If your project only have (.py) Python scripts, make sure to select the proper interpreter. Press ctrl + shift + p and search Python select interpreter
 
-### Python packages on requirements.txt
+### Python packages in requirements.txt
 These packages are the most popular and you can customise your own **requirements.tx**t file depending on your project needs.
 - python-dotenv is useful when you want to separate sensitive data like usernames, password and others
 - pandas is useful for data manipulation (dataframes)
@@ -72,7 +120,7 @@ You can install more packages later. For example:
 - duckdb is a powerfull embedded database for analytical purposes
 - tensorflow is very popular for neural networks (deep learning)
 
-## For those who prefer conda environments
+## Alternative conda environments - only if you need it
 - Use your vscode or R studio terminal to download miniconda: `wget -P /mnt/homes/your_user/ https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
 - Give execution permission to the script: `chmod +x /mnt/homes/your_user/Miniconda3-latest-Linux-x86_64.sh`
 - Run the script file (Follow the installation steps): `bash /mnt/homes/your_user/Miniconda3-latest-Linux-x86_64.sh`
