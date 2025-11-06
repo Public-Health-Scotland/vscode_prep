@@ -37,7 +37,7 @@ There are some extensions which will help to improve your development experience
 
 ## How to run this bash
 - Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
-- Make shure “install_extensions.sh” has executable permissions `ls -l install_extensions.sh`. You should see "x" on the left hand side permissions file details section.
+- Make sure “install_extensions.sh” has executable permissions `ls -l install_extensions.sh`. You should see "x" on the left hand side permissions file details section.
 ![alt text](./img/image-7.png)
 - If you cannot see the x you should change the permissions using `chmod +x install_extensions.sh`
 - Execute in your terminal: `bash install_extensions.sh`
