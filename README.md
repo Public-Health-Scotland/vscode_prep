@@ -3,7 +3,7 @@ This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posi
 
 ## 1. Clone this repo
 - If you want to clone this repo, You will open a vs code session and open a terminal using ctrl + shift + '
-- if you do not want to create you can skip this section. You can create .sh files manually
+- If you do not want to clone this repo you can skip this section and create your .sh files manually.
 - Run the command in terminal `git clone https://github.com/Public-Health-Scotland/vscode_prep.git`
 - Then you have to open your project folder using vs code. Go to the left hand menu and click on the explorer. You will see an Open Folder button. Click that button and you will see a dropdown list. You can click on vscode_prep folder and then click OK
 
@@ -11,7 +11,7 @@ This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posi
 - You can skip this section if you have never installed any extensions in your vs code
 - You can use uninstall_extensions.sh from this repo in order to remove all extensions. It is recommended if you have previously installed extensions.
 - Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
-- Make shure uninstall_extensions.sh has executable permissions, run this command: `ls -l uninstall_extensions.sh`. You should see "x" on the left hand side permissions file details section.
+- Make sure uninstall_extensions.sh has executable permissions, run this command: `ls -l uninstall_extensions.sh`. You should see "x" on the left hand side permissions file details section.
 
 ## Extensions for vscode
 There are some extensions which will help to improve your development experience. The script called “install_extensions.sh” will automate the installation process. You can modify this file depending on your needs. These are the most used extensions you can find in the script:
@@ -44,7 +44,7 @@ There are some extensions which will help to improve your development experience
 - You will see Task completed in your terminal. So, it means everything worked ok.
 - You need to reload your vscode to make sure loading extensions. Press ctrl + shift + p and search Developer reload window
 ![alt text](img/image-19.png)
-- (More extensions) There are some other extensions installers in this repo.One of them is jsoncrack. It would be installed from offline_installers folder because it was downloaded from the Oficial microsoft marketplace. This folder content is part of the bash script install_extensions.sh offline section bash file installer.
+- (More extensions) There are some other extensions installers in this repo. One of them is jsoncrack. It would be installed from offline_installers folder because it was downloaded from the Official microsoft marketplace. This folder content is part of the bash script install_extensions.sh offline section bash file installer.
 
 ## Python venv creation
 You can use venv (similar to renv in R) to create environments (private package container). 
@@ -64,7 +64,7 @@ mkdir python_demo
 - You will see the complete path of your project folder and an OK button, click OK
 ![alt text](img/image-17.png)
 - You will be in your project folder ready to work.
-- You can choose one of these commands depending of your Python version need:
+- You can choose one of these commands depending on your Python version need:
 
 | Python Version | Command (virtual env outside Project Folder)                         | Command (Internal Project Folder)               |
 |----------------|----------------------------------------------------------------------|-------------------------------------------------|
@@ -75,7 +75,7 @@ mkdir python_demo
 
 - This command will create an environment called .venv
 - It is important to know Python versions end of support: https://devguide.python.org/versions/
-- It's time to activate your personal venv. It needs to be activated by terminal. You have to open a termina (ctrl + shift + ') if it is not a terminal in the bottom part of the vs code UI
+- It's time to activate your personal venv. It needs to be activated by terminal. You have to open a terminal (ctrl + shift + ') if it is not a terminal in the bottom part of the vs code UI
 - You need to remember you venv folder name, run one of these commands to activate it: 
 
 | Command (virtual env outside Project Folder)     | Command (Internal Project Folder) |
@@ -154,7 +154,7 @@ Only available in Jupyter notebooks
 ![alt text](./img/image-6.png)
 
 **How do I navigate to a folder on the stats drive to open a file?**
-- It is easy if you create a shortcut (symbolic lik). You need to open a termina and run this command: ln -s /conf/my_path /mnt/homes/your_user/name_for_your_shortcut
+- It is easy if you create a shortcut (symbolic link). You need to open a terminal and run this command: ln -s /conf/my_path /mnt/homes/your_user/name_for_your_shortcut
 - You must initialise your VSCode and go to the menu (top left) or simply press ctrl + k + o. I recommend opening a folder because projects need to be organised, and you can easily access all those files in the Explorer tab.
 - If you have a venv you have to open your folder, open a terminal and activate your venv.
 
@@ -188,3 +188,12 @@ pio.renderers.default = 'notebook_connected'`
 - Clic on it and you will see your script being formatted.
 ![alt text](./img/image-8.png)
 ![alt text](./img/image-9.png)
+
+**How can I create a diagrama using draw.io?**
+- You need to create a new file with the following extension .drawio.svg
+![alt text](img/image-24.png)
+- If you already installed drawio extension you will be able to open that file
+- You can find different icons. Search by words in the textbox
+![alt text](img/image-25.png)
+- You can add your diagraman to a README.md file like this:
+![Diagram](diagrams/my_diagram.drawio.svg)
