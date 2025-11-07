@@ -5,6 +5,7 @@ This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posi
 - If you want to clone this repo, You will open a vs code session and open a terminal using ctrl + shift + '
 - If you do not want to clone this repo you can skip this section and create your .sh files manually.
 - Run the command in terminal `git clone https://github.com/Public-Health-Scotland/vscode_prep.git`
+- There are more useful GitHub commands in [View GitHub Folder README](GitHub/README.md)
 - Then you have to open your project folder using vs code. Go to the left hand menu and click on the explorer. You will see an Open Folder button. Click that button and you will see a dropdown list. You can click on vscode_prep folder and then click OK
 
 ## 2. Clean old extensions
