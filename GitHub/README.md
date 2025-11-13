@@ -25,3 +25,9 @@ Note: Files/folders listed in .gitignore will have a gray colour in your Explore
 - If you want to list changes in the current branch: `git status`
 ![alt text](img/image-3.png)
 - If you want to restore a file, you can use the listed changes from git status command to copy file path. For example I will restore README.md file from GitHub folder: `git restore GitHub/README.md`
+
+## If you transfer a repo from your account to an organisation account
+- Use this command in terminal to check the current url in your local folder: `git remote -v`
+- Copy the URL from the organisation repo
+- Run this command in terminal to set the new orgnaisation github repo: `git remote set-url origin https://github.com/<your_org>/<repo_name>.git`
+- If you run `git remote -v` again you will see the new organisation repo URL in your local folder.
