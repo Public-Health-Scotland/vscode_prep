@@ -72,3 +72,7 @@ def transform_data(): ...
 def save_data(): ...
 ```
 Comment: Monolithic functions are hard to test, debug, and maintain. Break down functionality into smaller, reusable functions.
+
+## Test package installation speed
+- Run installing_on_linux.sh to test package installation speed on Linux.
+- Run installing_on_windows.bat to test package installation speed on Windows.
