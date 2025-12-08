@@ -20,16 +20,17 @@ if [ -d "$MYHOME/test_01" ]; then
     echo "Virtual environment already exists at $MYHOME/test_01"
 else
     echo "Creating virtual environment at $MYHOME/test_01"
-    /opt/python/3.12.6/bin/python3.12 -m venv $MYHOME/test_01
+    python -m venv $MYHOME/test_01
 fi
 source "$MYHOME/test_01/bin/activate"
 
-echo "Packages installed in current venv:"
-pip list
+# echo "Packages installed in current venv:"
+# pip list
 
 # Run pip install
-pip install --upgrade pip wheel
-pip install pandas==2.3.1
+# pip install --upgrade pip wheel
+pip install pandas==2.3.3
+pip install plotly==6.5.0
 # pip install -r requirements.txt
 
 # Print Python version
@@ -37,8 +38,8 @@ echo "Python version in current vemv:"
 python --version
 
 # Print pandas version
-echo "Pandas version in current venv:"
-python -c "import pandas as pd; print(pd.__version__)"
+# echo "Pandas version in current venv:"
+# python -c "import pandas as pd; print(pd.__version__)"
 
 deactivate
 
