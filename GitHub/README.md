@@ -1,12 +1,17 @@
-# How to use GitHub
+# How to use GitHub on vs code
+There are ways to connect to GitHub. You can use HTTPS or SSH. If a repo is public you can quickly clone a repo using git clone https... but if this repo is not public you will need to setup SSH. If you already setup SSH in R studio you don't need to do it again.
 
-If you already setup PAT in R studio you don't need to setup again.
+## How to setup SSH by terminal
+- Open a terminal and run the following command: `bash GitHub/setup_github_ssh_min.sh -e "your_email_registed_on_your_github_account"`
+- Follow the instructions showed in terminal
+- You can check if your SSH is working, run this command: `ssh -T git@github.com`
+- You will see a message in terminal like: **Hi username! You've successfully authenticated, but GitHub does not provide shell access.**
 
-## Option 1: Using your terminal
+## Common commands in terminal
 If you are working in a project which already is on GitHub. Follow these steps:
 
 - Open a terminal (if it isn't already open)
-- If you want to check which files have change, run this command: `git status`
+- If you want to check which files have changed, run this command: `git status`
 ![alt text](img/image-4.png)
 - You can add all your changes using this command: `git add .`
 - It's time to create your commit, use this command: `git commit -m "your_message"`
@@ -28,6 +33,7 @@ Note: Files/folders listed in .gitignore will have a gray colour in your Explore
 
 ## If you transfer a repo from your account to an organisation account
 - Use this command in terminal to check the current url in your local folder: `git remote -v`
+- If you see origin  https://github.com... it means it was cloned using HTTPS
 - Copy the URL from the organisation repo
 - Run this command in terminal to set the new orgnaisation github repo: `git remote set-url origin https://github.com/<your_org>/<repo_name>.git`
-- If you run `git remote -v` again you will see the new organisation repo URL in your local folder.
+- You can see the changes if you run this command again: `git remote -v`
