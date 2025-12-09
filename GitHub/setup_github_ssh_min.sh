@@ -97,21 +97,9 @@ log "Key added to ssh-agent."
 
 # Show/copy public key
 PUB="$(cat "$KEY_FILE.pub")"
-copied="false"
-if command -v wl-copy >/dev/null 2>&1; then
-  echo -n "$PUB" | wl-copy && copied="true"
-elif command -v xclip >/dev/null 2>&1; then
-  echo -n "$PUB" | xclip -selection clip && copied="true"
-elif command -v clip.exe >/dev/null 2>&1; then
-  echo -n "$PUB" | clip.exe && copied="true"
-fi
+log "Public key generated, select line below and copy it"
+echo "$PUB"
 
-if [[ "$copied" = "true" ]]; then
-  log "Public key copied to clipboard."
-else
-  log "\nYour public key (copy and add to GitHub → Settings → SSH and GPG keys):\n"
-  echo "$PUB"
-fi
+log "Paste on GitHub = Settings = SSH and GPG keys - SSH Keys - New SSH Key"
 
-log "\nDone. You can now use SSH with GitHub, e.g.:"
-log "  git clone git@github.com:<owner>/<repo>.git"
+log "\nDone. You can now use SSH with GitHub, e.g.: git clone git@github.com:<owner>/<repo>.git"

@@ -2,7 +2,7 @@
 There are ways to connect to GitHub. You can use HTTPS or SSH. If a repo is public you can quickly clone a repo using git clone https... but if this repo is not public you will need to setup SSH. If you already setup SSH in R studio you don't need to do it again.
 
 ## How to setup SSH by terminal
-- Open a terminal and run the following command: `bash GitHub/setup_github_ssh_min.sh -e "your_email_registed_on_your_github_account"`
+- Open a terminal and run the following command: `bash GitHub/setup_github_ssh_min.sh -e "your_email_registed_on_your_github_account" -n -f`
 - Follow the instructions showed in terminal
 - You can check if your SSH is working, run this command: `ssh -T git@github.com`
 - You will see a message in terminal like: **Hi username! You've successfully authenticated, but GitHub does not provide shell access.**
