@@ -1,19 +1,23 @@
 # **vscode_prep**
-This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posit.
+This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posit. These steps are compatible witn Positron.
 
 ## 1. Clone this repo
-- If you want to clone this repo, You will open a vs code session and open a terminal using ctrl + shift + '
+- If you want to clone this repo, launch a vs code/Positron session and open a terminal using ctrl + shift + '
 - If you do not want to clone this repo you can skip this section and create your .sh files manually.
 - Run the command in terminal `git clone https://github.com/Public-Health-Scotland/vscode_prep.git`
-- There are more useful GitHub commands in [View GitHub Folder README](GitHub/README.md)
-- Then you have to open your project folder using vs code. Go to the left hand menu and click on the explorer. You will see an Open Folder button. Click that button and you will see a dropdown list. You can click on vscode_prep folder and then click OK
+- There are more useful GitHub commands here [View GitHub Folder README](GitHub/README.md)
+- Then you have to open your project folder using vs code/Positron. Go to the left hand menu and click on the explorer. You will see an Open Folder button. Click that button and you will see a dropdown list. You can click on vscode_prep folder and then click OK
 
 ## 2. Clean old extensions
-- You can skip this section if you have never installed any extensions in your vs code
-- You can use uninstall_extensions.sh from this repo in order to remove all extensions. It is recommended if you have previously installed extensions.
+- You can skip this section if you have never installed any extensions in your IDE
 - Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
+- You can use uninstall_extensions.sh from this repo in order to remove all extensions. It is recommended if you have previously installed extensions.
 - Make sure uninstall_extensions.sh has executable permissions, run this command: `ls -l uninstall_extensions.sh`. You should see "x" on the left hand side permissions file details section.
-- Run this command in terminal to uninstall extensions in vs code: `bash uninstall_extensions.sh vscode`
+- Execute in terminal depending on your IDE to uninstall all installed extensions: 
+| IDE       | Command                                 |
+|-----------|-----------------------------------------|
+| vs code   | `bash uninstall_extensions.sh vscode`   |
+| positron  | `bash uninstall_extensions.sh positron` |
 
 ## Extensions for vscode
 There are some extensions which will help to improve your development experience. The script called “install_extensions.sh” will automate the installation process. You can modify this file depending on your needs. These are the most used extensions you can find in the script:
@@ -42,8 +46,13 @@ There are some extensions which will help to improve your development experience
 - Make sure “install_extensions.sh” has executable permissions `ls -l install_extensions.sh`. You should see "x" on the left hand side permissions file details section.
 ![alt text](./img/image-7.png)
 - If you cannot see the x you should change the permissions using `chmod +x install_extensions.sh`
-- Execute in your terminal: `bash install_extensions.sh vscode base`
-- You will see Task completed in your terminal. So, it means everything worked ok.
+- Run in your terminal: 
+| IDE       | Command                                    |
+|-----------|--------------------------------------------|
+| vs code   | `bash install_extensions.sh vscode base`   |
+| positron  | `bash install_extensions.sh positron base` |
+
+- You will see **Installation completed** in your terminal. So, it means everything worked ok.
 - You need to reload your vscode to make sure loading extensions. Press ctrl + shift + p and search Developer reload window
 ![alt text](img/image-19.png)
 - (More extensions) There are some other extensions installers in this repo. One of them is jsoncrack. It would be installed from offline_installers folder because it was downloaded from the Official microsoft marketplace. This folder content is part of the bash script install_extensions.sh offline section bash file installer.
@@ -61,7 +70,7 @@ You can use venv (similar to renv in R) to create environments (private package 
 ```
 mkdir python_demo
 ```
-- Then you have to open your project folder using vs code. Go to the left hand menu and click on the explorer. You will see an Open Folder button. Click that button and you will see a dropdown list. You can click on your project folder (python_demo)
+- Then you have to open your project folder using vs code/Positron. Go to the left hand menu and click on the explorer. You will see an Open Folder button. Click that button and you will see a dropdown list. You can click on your project folder (python_demo)
 ![alt text](img/image-16.png)
 - You will see the complete path of your project folder and an OK button, click OK
 ![alt text](img/image-17.png)
@@ -77,7 +86,7 @@ mkdir python_demo
 
 - This command will create an environment called .venv
 - It is important to know Python versions end of support: https://devguide.python.org/versions/
-- It's time to activate your personal venv. It needs to be activated by terminal. You have to open a terminal (ctrl + shift + ') if it is not a terminal in the bottom part of the vs code UI
+- It's time to activate your personal virtual environment (venv). You need to activate it through the terminal. Open a terminal (Ctrl + Shift + `) if there isn’t one at the bottom of the VS Code/Positron interface.
 - You need to remember you venv folder name, run one of these commands to activate it: 
 
 | Command (virtual env outside Project Folder)     | Command (Internal Project Folder) |
@@ -95,7 +104,7 @@ mkdir python_demo
     Note: If you don't activate your python environment you will probably install your package in the main Python installation.
     
 - It is important to know packages versions for compatibility purposes, who develops this package (trusted sources) and how frequent they are updated: https://pypi.org/
-- You can refresh your vs code to make sure your venv has been detected. Press ctrl + shift + p and search Developer reload window
+- You should refresh your IDE to make sure your venv has been detected. Press ctrl + shift + p and search Developer reload window
 
 ### If you installed juputerlab in your own environment
 - When you work with jupyter notebooks (.ipynb), make sure to click on the select kernel (dropdown right hand side) and choose your environment name.
