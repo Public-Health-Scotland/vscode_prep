@@ -1,9 +1,23 @@
-# for vscode
-PWB_APP="/usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server"
-# for positron
-# PWB_APP="/usr/lib/rstudio-server/bin/positron-server/bin/positron-server"
-# Online installers
-URLS=(
+# Get the first argument
+ide=$1
+option=$2
+
+# Check arg count
+if [[ $# -ne 2 ]]; then
+  echo "Error: exactly 2 arguments required (ide and option)." >&2
+  echo "Usage: $0 <ide> <option>"
+  echo "Examples:"
+  echo "  $0 vscode base"
+  echo "  $0 positron base"
+  echo "  $0 vscode java"
+  echo "  $0 positron java"
+  echo "  $0 vscode all"
+  echo "  $0 positron all"
+  exit 2
+fi
+
+# base extensions
+BASE_URL=(
   "https://open-vsx.org/api/ms-python/python/2025.16.0/file/ms-python.python-2025.16.0.vsix"
   "https://open-vsx.org/api/ms-python/debugpy/linux-x64/2025.14.1/file/ms-python.debugpy-2025.14.1@linux-x64.vsix"
   "https://open-vsx.org/api/njpwerner/autodocstring/0.6.1/file/njpwerner.autodocstring-0.6.1.vsix"
@@ -26,6 +40,50 @@ URLS=(
   "https://open-vsx.org/api/hediet/vscode-drawio/1.6.6/file/hediet.vscode-drawio-1.6.6.vsix"
 )
 
+# add java extensions
+JAVA_URL=(
+  "https://open-vsx.org/api/vscjava/vscode-java-dependency/0.26.3/file/vscjava.vscode-java-dependency-0.26.3.vsix"
+  "https://open-vsx.org/api/vscjava/vscode-maven/0.44.0/file/vscjava.vscode-maven-0.44.0.vsix"
+  "https://open-vsx.org/api/vscjava/vscode-gradle/3.17.1/file/vscjava.vscode-gradle-3.17.1.vsix"
+  "https://open-vsx.org/api/vscjava/vscode-java-test/0.43.2/file/vscjava.vscode-java-test-0.43.2.vsix"
+  "https://open-vsx.org/api/redhat/java/linux-x64/1.51.2025121108/file/redhat.java-1.51.2025121108@linux-x64.vsix"
+  "https://open-vsx.org/api/vscjava/vscode-java-debug/0.58.3/file/vscjava.vscode-java-debug-0.58.3.vsix"
+)
+
+# Check the value of ide
+if [ "$ide" == "vscode" ]; then
+    # for vscode
+    PWB_APP="/usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server"
+    echo "VS Code"
+elif [ "$ide" == "positron" ]; then
+    # for positron
+    PWB_APP="/usr/lib/rstudio-server/bin/positron-server/bin/positron-server"
+    echo "Positron"
+
+    POSIT_URL=(
+      "https://open-vsx.org/api/posit/publisher/linux-x64/1.27.10/file/posit.publisher-1.27.10@linux-x64.vsix"
+    )
+
+    BASE_URL=( "${BASE_URL[@]}" "${POSIT_URL[@]}" )
+else
+    echo "Unknown IDE: $ide"
+    exit 1
+fi
+
+if [ "$option" == "all" ]; then
+  echo "All extensions for Python/R/Java"
+  URLS=( "${BASE_URL[@]}" "${JAVA_URL[@]}" )
+elif [ "$option" == "base" ]; then
+  echo "Extensions only for Python/R"
+  URLS=( "${BASE_URL[@]}" )
+elif [ "$option" == "java" ]; then
+  echo "Extensions only for Java"
+  URLS=( "${JAVA_URL[@]}" )
+else
+  echo "Unknown extensions option: $option"
+  exit 1
+fi
+
 for URL in "${URLS[@]}"; do
   SAVE_LOCATION="/tmp/$(basename $URL)"
   SAVE_LOCATION="${SAVE_LOCATION//@/}"
@@ -35,16 +93,19 @@ for URL in "${URLS[@]}"; do
   rm -f $SAVE_LOCATION
 done
 
-# Offline installers
-for file in ./offline_installers/*.vsix
-do
-  if [ -e "$file" ]
-  then
-    $PWB_APP --install-extension $file
-    echo "Installed: $file"
-  else
-    echo "No local extensions files detected in this current folder"
-    break
-  fi
-done
-echo "Task completed!"
+if [[ "$option" == "all" || "$option" == "base" ]]; then
+  # Offline installers
+  for file in ./offline_installers/*.vsix
+  do
+    if [ -e "$file" ]
+    then
+      $PWB_APP --install-extension $file
+      echo "Installed: $file"
+    else
+      echo "No local extensions files detected in this current folder"
+      break
+    fi
+  done
+fi
+
+echo "Installation completed!"

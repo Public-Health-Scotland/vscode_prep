@@ -13,6 +13,7 @@ This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posi
 - You can use uninstall_extensions.sh from this repo in order to remove all extensions. It is recommended if you have previously installed extensions.
 - Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
 - Make sure uninstall_extensions.sh has executable permissions, run this command: `ls -l uninstall_extensions.sh`. You should see "x" on the left hand side permissions file details section.
+- Run this command in terminal to uninstall extensions in vs code: `bash uninstall_extensions.sh vscode`
 
 ## Extensions for vscode
 There are some extensions which will help to improve your development experience. The script called “install_extensions.sh” will automate the installation process. You can modify this file depending on your needs. These are the most used extensions you can find in the script:
@@ -41,7 +42,7 @@ There are some extensions which will help to improve your development experience
 - Make sure “install_extensions.sh” has executable permissions `ls -l install_extensions.sh`. You should see "x" on the left hand side permissions file details section.
 ![alt text](./img/image-7.png)
 - If you cannot see the x you should change the permissions using `chmod +x install_extensions.sh`
-- Execute in your terminal: `bash install_extensions.sh`
+- Execute in your terminal: `bash install_extensions.sh vscode base`
 - You will see Task completed in your terminal. So, it means everything worked ok.
 - You need to reload your vscode to make sure loading extensions. Press ctrl + shift + p and search Developer reload window
 ![alt text](img/image-19.png)
