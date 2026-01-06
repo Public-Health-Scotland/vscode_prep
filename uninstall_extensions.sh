@@ -21,6 +21,7 @@ else
     exit 1
 fi
 
+# vs code extensions which is never uninstalled
 ONLY_ID="b907bd27103da661e0bd06d35d07bc8e79bbf27a"
 
 # helper to get extensions ID
@@ -30,9 +31,11 @@ list_extension_ids() {
   | grep -v -F "$ONLY_ID"
 }
 
-for ext in $(list_extension_ids); do
-  if ! "$PWB_APP" --uninstall-extension "$ext"; then
-    echo "*WARN: uninstall failed for $ext" >&2
-  fi
+while (( $(list_extension_ids | wc -l) > 0 )); do
+  for ext in $(list_extension_ids); do
+    if ! "$PWB_APP" --uninstall-extension "$ext"; then
+      echo "*WARN: uninstall failed for $ext" >&2
+    fi
+  done
 done
 echo "Extensions removal completed!"

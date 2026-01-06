@@ -16,6 +16,9 @@ if [[ $# -ne 2 ]]; then
   exit 2
 fi
 
+# Prevent VS Code / code-server "Warning: Ignoring extra certs"
+unset NODE_EXTRA_CA_CERTS
+
 # base extensions
 BASE_URL=(
   "https://open-vsx.org/api/ms-python/python/2025.16.0/file/ms-python.python-2025.16.0.vsix"
