@@ -2,7 +2,6 @@
 ide=$1
 option=$2
 
-
 # Check arg count
 if [[ $# -ne 2 ]]; then
   echo "Error: exactly 2 arguments required (ide and option)." >&2
@@ -55,11 +54,11 @@ JAVA_URL=(
 if [ "$ide" == "vscode" ]; then
     # for vscode
     PWB_APP="/usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server"
-    echo "VS Code"
+    echo "You selected VS Code"
 elif [ "$ide" == "positron" ]; then
     # for positron
     PWB_APP="/usr/lib/rstudio-server/bin/positron-server/bin/positron-server"
-    echo "Positron"
+    echo "You selected Positron"
 
     POSIT_URL=(
       "https://open-vsx.org/api/posit/publisher/linux-x64/1.27.10/file/posit.publisher-1.27.10@linux-x64.vsix"
@@ -67,7 +66,7 @@ elif [ "$ide" == "positron" ]; then
 
     BASE_URL=( "${BASE_URL[@]}" "${POSIT_URL[@]}" )
 else
-    echo "Unknown IDE: $ide"
+    echo "Not supported IDE: $ide"
     exit 1
 fi
 
@@ -89,8 +88,8 @@ for URL in "${URLS[@]}"; do
   SAVE_LOCATION="/tmp/$(basename $URL)"
   SAVE_LOCATION="${SAVE_LOCATION//@/}"
   curl $URL -L -o $SAVE_LOCATION
-  echo "Installing $SAVE_LOCATION"
   $PWB_APP --install-extension $SAVE_LOCATION
+  echo "Installed $SAVE_LOCATION"
   rm -f $SAVE_LOCATION
 done
 
