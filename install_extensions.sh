@@ -2,6 +2,7 @@
 ide=$1
 option=$2
 
+
 # Check arg count
 if [[ $# -ne 2 ]]; then
   echo "Error: exactly 2 arguments required (ide and option)." >&2
@@ -101,9 +102,6 @@ if [[ "$option" == "all" || "$option" == "base" ]]; then
     then
       $PWB_APP --install-extension $file
       echo "Installed: $file"
-    else
-      echo "No local extensions files detected in this current folder"
-      break
     fi
   done
 fi
