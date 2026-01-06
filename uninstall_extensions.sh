@@ -21,6 +21,18 @@ else
     exit 1
 fi
 
-for ext in $($PWB_APP --list-extensions); do
-    $PWB_APP --uninstall-extension "$ext"
+ONLY_ID="b907bd27103da661e0bd06d35d07bc8e79bbf27a"
+
+# helper to get extensions ID
+list_extension_ids() {
+  "$PWB_APP" --list-extensions 2>/dev/null \
+  | grep -E '^[a-z0-9.-]+\.[a-z0-9.-]+$|^[a-f0-9]{40,}$' \
+  | grep -v -F "$ONLY_ID"
+}
+
+for ext in $(list_extension_ids); do
+  if ! "$PWB_APP" --uninstall-extension "$ext"; then
+    echo "*WARN: uninstall failed for $ext" >&2
+  fi
 done
+echo "Extensions removal completed!"

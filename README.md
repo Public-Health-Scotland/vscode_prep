@@ -1,5 +1,5 @@
 # **vscode_prep**
-This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posit. These steps are compatible witn Positron.
+This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posit. These steps are also compatible with Positron (2025.08.1 build 11).
 
 ## 1. Clone this repo
 - If you want to clone this repo, launch a vs code/Positron session and open a terminal using ctrl + shift + '
@@ -18,6 +18,7 @@ This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posi
 |-----------|-----------------------------------------|
 | vs code   | `bash uninstall_extensions.sh vscode`   |
 | positron  | `bash uninstall_extensions.sh positron` |
+- You will see **Extensions removal completed!** in your terminal.
 
 ## Extensions for vscode
 There are some extensions which will help to improve your development experience. The script called “install_extensions.sh” will automate the installation process. You can modify this file depending on your needs. These are the most used extensions you can find in the script:
@@ -52,8 +53,8 @@ There are some extensions which will help to improve your development experience
 | vs code   | `bash install_extensions.sh vscode base`   |
 | positron  | `bash install_extensions.sh positron base` |
 
-- You will see **Installation completed** in your terminal. So, it means everything worked ok.
-- You need to reload your vscode to make sure loading extensions. Press ctrl + shift + p and search Developer reload window
+- You will see **Installation completed!** in your terminal. So, it means everything worked ok.
+- You need to reload your vs code/Positron to make sure loading extensions. Press ctrl + shift + p and search Developer reload window
 ![alt text](img/image-19.png)
 - (More extensions) There are some other extensions installers in this repo. One of them is jsoncrack. It would be installed from offline_installers folder because it was downloaded from the Official microsoft marketplace. This folder content is part of the bash script install_extensions.sh offline section bash file installer.
 
