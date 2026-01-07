@@ -1,4 +1,4 @@
-# How to use GitHub on vs code
+# How to use GitHub on vs code/Positron
 There are ways to connect to GitHub. You can use HTTPS or SSH. If a repo is public you can quickly clone a repo using git clone https... but if this repo is not public you will need to setup SSH. If you already setup SSH in R studio you don't need to do it again.
 
 ## How to setup SSH by terminal
