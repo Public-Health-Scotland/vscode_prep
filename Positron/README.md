@@ -4,7 +4,7 @@ This file describes the Positron IDE (2025.08.1 build 11) available in the Posit
 
 ## Restrictions
 
-🔴**Ai Assistants**: PHS users are **not allowed** to integrate any AI assistance (GitHub copilot/Claude) in Positron for just now.
+🔴**AI Assistants**: PHS users are **not allowed** to integrate any AI assistance (GitHub Copilot, Claude, etc.) in Positron for now.
 
 ## How can I install extensions in Positron?
 
