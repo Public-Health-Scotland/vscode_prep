@@ -70,7 +70,7 @@ This repository also have other useful guides.
 # **Frequently asked questions**
 
 **How can I use the vscode-icons?**
-- Go to the left hand side bar and click on extensions. Then, click on the vscode-icons, click on set file icon theme and finally click on VSCode icons.
+- Go to the left hand side bar and click on extensions. Then, click on the vscode-icons (Positron compatible), click on set file icon theme and finally click on VSCode icons.
 ![alt text](./img/image-6.png)
 
 **How do I navigate to a folder on the stats drive to open a file?**
