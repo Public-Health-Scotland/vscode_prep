@@ -91,9 +91,9 @@ This repository also have other useful guides.
 ![alt text](./img/image-3.png)
 
 **Can I use question mark to ask about functions?**
-- You can use question mark (?) and double question mark (??) after the function to get some informatio like this:
+- If you are using VS code (only with Jupyter notebooks files) you can use question mark (?) and double question mark (??) after the function to get some informatio like this:
 ![alt text](./img/image-14.png)
-Only available in Jupyter notebooks (VS code) or Positron console tab
+- If you are using Positron you can use ? and ?? after the function name in the console tab
 
 **Can I export a Jupyter notebook in HTML format?**
 - Yes, you can. Press ctr + shift + p and search Export to html
