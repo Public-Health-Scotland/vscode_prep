@@ -1,9 +1,11 @@
 import pandas as pd
 
 df = pd.read_csv(
-    "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-03-05/trashwheel.csv", parse_dates=['Date'])
+    "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-03-05/trashwheel.csv", 
+    parse_dates=['Date'])
 
 print(df.head(3))
+
 print(df.describe())
 
 

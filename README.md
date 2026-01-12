@@ -85,8 +85,10 @@ This repository also have other useful guides.
 **Is there an environment like there is with R where I can see what I've created?**
 - If you are running a .ipynb file extension you can use Jupyter variable windows. You should go to the menu (top left) and select terminal – new terminal. After that, you click on Jupyter variables tab.
 ![alt text](./img/image-1.png)
-- You can use the extension code runner to run chunks of code. You need to select the lines of code and choose "run code" on the right-click menu or press ctrl + alt + n
+- You can use the extension code runner (VS code) to run chunks of code. You need to select the lines of code and choose "run code" on the right-click menu or press ctrl + alt + n
 ![alt text](./img/image-2.png)
+- You can also use the console tab in Positron. Select the code you want to run and use ctrl + enter to run the code in the console tab.
+![alt text](./img/image-3.png)
 
 **Can I use question mark to ask about functions?**
 - You can use question mark (?) and double question mark (??) after the function to get some informatio like this:
