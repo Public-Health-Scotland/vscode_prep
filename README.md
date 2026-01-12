@@ -1,5 +1,10 @@
 # **vscode_prep**
-This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posit. These steps are also compatible with Positron (2025.08.1 build 11).
+This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posit. These steps are also compatible with Positron (2025.08.1 build 11). This repository also have other useful guidance.
+
+| Topic    | Location                                      |
+|----------|----------------------------------------------|
+| Positron | [View Positron README](./Positron/README.md) |
+| GitHub   | [View GitHub README](./GitHub/README.md)     |
 
 ## 1. Clone this repo
 - If you want to clone this repo, launch a vs code/Positron session and open a terminal using ctrl + shift + '
