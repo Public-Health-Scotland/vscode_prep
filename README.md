@@ -16,7 +16,13 @@ This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posi
 -   Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
 -   You can use uninstall_extensions.sh from this repo in order to remove all extensions. It is recommended if you have previously installed extensions.
 -   Make sure uninstall_extensions.sh has executable permissions, run this command: `ls -l uninstall_extensions.sh`. You should see "x" on the left hand side permissions file details section.
--   Execute in terminal depending on your IDE to uninstall all installed extensions: \| IDE \| Command \| \|-----------\|-----------------------------------------\| \| vs code \| `bash uninstall_extensions.sh vscode` \| \| positron \| `bash uninstall_extensions.sh positron` \|
+-   Execute in terminal depending on your IDE to uninstall all installed extensions:
+
+| IDE      | Command                                 |
+|----------|-----------------------------------------|
+| vs code  | `bash uninstall_extensions.sh vscode`   |
+| positron | `bash uninstall_extensions.sh positron` |
+
 -   You will see **Extensions removal completed!** in your terminal.
 
 ## Extensions for vscode
@@ -52,7 +58,12 @@ There are some extensions which will help to improve your development experience
 
 -   If you cannot see the x you should change the permissions using `chmod +x install_extensions.sh`
 
--   Run in your terminal: \| IDE \| Command \| \|-----------\|--------------------------------------------\| \| vs code \| `bash install_extensions.sh vscode base` \| \| positron \| `bash install_extensions.sh positron base` \|
+-   Run in your terminal:
+
+| IDE      | Command                                    |
+|----------|--------------------------------------------|
+| vs code  | `bash install_extensions.sh vscode base`   |
+| positron | `bash install_extensions.sh positron base` |
 
 -   You will see **Installation completed!** in your terminal. So, it means everything worked ok.
 
