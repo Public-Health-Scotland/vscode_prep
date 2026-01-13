@@ -50,7 +50,7 @@ mkdir python_demo
 - It is important to know packages versions for compatibility purposes, who develops this package (trusted sources) and how frequent they are updated: https://pypi.org/
 - You should refresh your IDE to make sure your venv has been detected. Press ctrl + shift + p and search Developer reload window
 
-### If you installed juputerlab in your own environment
+### If you installed jupyterlab in your own environment
 - When you work with jupyter notebooks (.ipynb), make sure to click on the select kernel (dropdown right hand side) and choose your environment name.
 ![](./img/image-20.png)
 - Click on Python environments
