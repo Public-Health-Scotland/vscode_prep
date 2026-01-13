@@ -46,7 +46,9 @@ There are some extensions which will help to improve your development experience
 
 -   Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
 
--   Make sure “install_extensions.sh” has executable permissions `ls -l install_extensions.sh`. You should see "x" on the left hand side permissions file details section. ![alt text](./img/image-7.png)
+-   Make sure “install_extensions.sh” has executable permissions `ls -l install_extensions.sh`. You should see "x" on the left hand side permissions file details section.
+
+![alt text](./img/image-7.png)
 
 -   If you cannot see the x you should change the permissions using `chmod +x install_extensions.sh`
 
@@ -54,7 +56,9 @@ There are some extensions which will help to improve your development experience
 
 -   You will see **Installation completed!** in your terminal. So, it means everything worked ok.
 
--   You need to reload your vs code/Positron to make sure loading extensions. Press ctrl + shift + p and search Developer reload window ![alt text](img/image-19.png)
+-   You need to reload your vs code/Positron to make sure loading extensions. Press ctrl + shift + p and search Developer reload window
+
+![alt text](img/image-19.png)
 
 -   (More extensions) There are some other extensions installers in this repo. One of them is jsoncrack. It would be installed from offline_installers folder because it was downloaded from the Official microsoft marketplace. This folder content is part of the bash script install_extensions.sh offline section bash file installer.
 
@@ -74,7 +78,7 @@ This repository also have other useful guides.
 
 -   Go to the left hand side bar and click on extensions. Then, click on the vscode-icons extension (Positron compatible), click on set file icon theme and finally click on VSCode icons.
 
-![alt text](./img/image-6.png){width="722"}
+<img src="./img/image-6.png" width="710"/>
 
 **How do I navigate to a folder on the stats drive to open a file?**
 
@@ -98,7 +102,7 @@ This repository also have other useful guides.
 
 -   You can use the extension code runner (VS code) to run chunks of code. You need to select the lines of code and choose "run code" on the right-click menu or press ctrl + alt + n
 
-![alt text](./img/image-2.png){width="630"}
+<img src="./img/image-2.png" width="620"/>
 
 -   You can also use the console tab in Positron. Select the code you want to run and use ctrl + enter to run the code in the console tab.
 
@@ -108,7 +112,7 @@ This repository also have other useful guides.
 
 -   If you are using VS code (only with Jupyter notebooks files) you can use question mark (?) and double question mark (??) after the function to get some information like this:
 
-![alt text](./img/image-14.png){width="603"}
+<img src="./img/image-14.png" width="600"/>
 
 -   If you are using Positron you can use ? and ?? after the function name in the console tab
 
@@ -116,7 +120,7 @@ This repository also have other useful guides.
 
 -   Yes, you can. Press ctr + shift + p and search Export to html
 
-![alt text](./img/image-15.png){width="444"}
+<img src="./img/image-15.png" width="444"/>
 
 -   If you are working with Plotly you will need to add these lines of code at the beginnin of your Notebook: `import plotly.io as pio pio.renderers.default = 'notebook_connected'`
 
@@ -124,11 +128,11 @@ This repository also have other useful guides.
 
 -   If you have a JSON file in your project and you can see the structure in a easy way, you neeed to open the file and go to the right-hand side corner. Press the JC icon:
 
-![alt text](./img/image-4.png){width="305"}
+<img src="./img/image-4.png" width="305"/>
 
 -   You will have a result like this:
 
-![alt text](./img/image-5.png){width="589"}
+<img src="./img/image-5.png" width="589"/>
 
 **How can I format my files?**
 
@@ -138,7 +142,7 @@ This repository also have other useful guides.
 
 -   Click on it and you will see your script being formatted. ![alt text](./img/image-8.png){width="596"}
 
-![alt text](./img/image-9.png){width="315"}
+<img src="./img/image-9.png" width="315"/>
 
 **How can I create a diagrama using draw.io?**
 
