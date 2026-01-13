@@ -37,3 +37,13 @@ Note: Files/folders listed in .gitignore will have a gray colour in your Explore
 - Copy the URL from the organisation repo
 - Run this command in terminal to set the new orgnaisation github repo: `git remote set-url origin https://github.com/<your_org>/<repo_name>.git`
 - You can see the changes if you run this command again: `git remote -v`
+
+## Git autocompletion in Terminal
+If you want to add git autocompletion command feature in your terminal you can follow the following steps:
+- Open a terminal using ctrl + alt + ' (if there is no other opened)
+- Run this command to download the feature script:
+`curl -o ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash`
+- Run this command to Add the feature to your user bash settings:
+`echo "source ~/.git-completion.bash" >> ~/.bashrc`
+- Run this code to apply the changes:
+`source ~/.bashrc`
