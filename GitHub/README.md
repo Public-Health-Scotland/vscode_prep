@@ -42,4 +42,12 @@ Note: Files/folders listed in .gitignore will have a gray colour in your Explore
 
 ## Git auto completion in Terminal
 
-If you want to add git autocompletion command feature in your terminal you can follow the following steps: - Open a terminal using ctrl + alt + ' (if there is no other opened) - Run this command to download the feature script: `curl -o ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash` - Run this command to Add the feature to your user bash settings: `echo "source ~/.git-completion.bash" >> ~/.bashrc` - Run this code to apply the changes: `source ~/.bashrc`
+If you want to add git autocompletion command feature in your terminal you can follow the following steps:
+
+-   Open a terminal using ctrl + alt + ' (if there is no other opened)
+
+-   Run this command to download the feature script: `curl -o ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash`
+
+-   Run this command to Add the feature to your user bash settings: `echo "source ~/.git-completion.bash" >> ~/.bashrc`
+
+-   Run this code to apply the changes: `source ~/.bashrc`
