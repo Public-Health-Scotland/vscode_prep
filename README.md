@@ -63,7 +63,7 @@ There are some extensions which will help to improve your development experience
 This repository also have other useful guides.
 
 | Topic | Location | Description |
-|------------|-----------------|---------------------------|
+|------------------|---------------------|---------------------------------|
 | Python | [View Python README](./Python/README.md) | How to create a virtual environment and use it |
 | Positron | [View Positron README](./Positron/README.md) | How to prepare Positron IDE |
 | GitHub | [View GitHub README](./GitHub/README.md) | How to use GitHub with vs code/Positron |
@@ -140,13 +140,17 @@ This repository also have other useful guides.
 
 ![alt text](./img/image-9.png){width="315"}
 
-**How can I create a diagrama using draw.io?** - You need to create a new file with the following extension .drawio.svg ![alt text](img/image-24.png){width="325"}
+**How can I create a diagrama using draw.io?**
+
+-   You need to create a new file with the following extension .drawio.svg
+
+<img src="./img/image-24.png" width="325"/>
 
 -   If you already installed drawio extension you will be able to open that file
 
 -   You can find different icons. Search by words in the textbox
 
-![This image show the draw.io palette](img/image-25.png){width="233"}
+<img src="./img/image-25.png" alt="This image show the draw.io palette" width="233"/>
 
 -   You can add your diagraman to a README.md file like this:
 
