@@ -18,11 +18,11 @@ This repo helps to prepare your VS Code 1.102.0 (Python and/or R) in the new Pos
 -   Then you have to open your project folder using vs code/Positron. Go to the left hand menu and click on the explorer icon. <img src="./img/image-0.png" alt="Explorer Icon" width="50"/>
 -   Click an Open Folder button. You will see a drop down list. You can click on stats_link, then click on vscode_prep folder and then click OK.
 
-<img src="./img/image-26.png" alt="" width="500"/>
+<img src="./img/image-26.png" width="500"/>
 
-<img src="./img/image-27.png" alt="" width="500"/>
+<img src="./img/image-27.png" width="500"/>
 
-<img src="./img/image-28.png" alt="" width="500"/>
+<img src="./img/image-28.png" width="500"/>
 
 ## 2. Clean old extensions
 
@@ -92,7 +92,7 @@ There are some extensions which will help to improve your development experience
 This repository also have other useful guides.
 
 | Topic | Location | Description |
-|-------------------|----------------------|--------------------------------|
+|----|----|----|
 | Python | [View Python README](./Python/README.md) | How to create a virtual environment and use it |
 | Positron | [View Positron README](./Positron/README.md) | How to prepare Positron IDE |
 | GitHub | [View GitHub README](./GitHub/README.md) | How to use GitHub with vs code/Positron |
