@@ -1,18 +1,32 @@
-# **vscode_prep**
+# **Prepare your VS Code/Positron for Python**
 
-This repo helps to prepare your vscode 1.102.0 (Python and/or R) in the new Posit. These steps are also compatible with Positron (2025.08.1 build 11).
+This repo helps to prepare your VS Code 1.102.0 (Python and/or R) in the new Posit. These steps are also compatible with Positron (2025.08.1 build 11).
+
+## Pre requisites
+
+-   You need to have access to VS Code or Positron in your stats drive.
+-   It is important to **work on your stats drive** because you will have more space to install extensions and store your projects.
+-   Create a symbolic link to your stats drive if you want to work easily with your files. You can do it using this command in a terminal: `ln -s /conf/<your_folder_path> /mnt/homes/<your_username>/stats_link`
+-   You can change stats_link to any name you want. Don't forget to replace <your_folder_path> and <your_username> with your information.
 
 ## 1. Clone this repo
 
--   If you want to clone this repo, launch a vs code/Positron session and open a terminal using ctrl + shift + '
--   If you do not want to clone this repo you can skip this section and create your .sh files manually.
--   Run the command in terminal `git clone https://github.com/Public-Health-Scotland/vscode_prep.git`
+-   Launch a vs code/Positron session and open a terminal using ctrl + shift + '
+-   Navigate to your stats drive link running this command: `cd stats_link` or `cd /mnt/homes/<your_username>/stats_link`
+-   Clone this repo running this command: `git clone https://github.com/Public-Health-Scotland/vscode_prep.git`
 -   There are more useful GitHub commands here [View GitHub Folder README](GitHub/README.md)
--   Then you have to open your project folder using vs code/Positron. Go to the left hand menu and click on the explorer. You will see an Open Folder button. Click that button and you will see a dropdown list. You can click on vscode_prep folder and then click OK
+-   Then you have to open your project folder using vs code/Positron. Go to the left hand menu and click on the explorer icon. <img src="./img/image-0.png" alt="Explorer Icon" width="50"/>
+-   Click an Open Folder button. You will see a drop down list. You can click on stats_link, then click on vscode_prep folder and then click OK.
+
+<img src="./img/image-26.png" alt="" width="500"/>
+
+<img src="./img/image-27.png" alt="" width="500"/>
+
+<img src="./img/image-28.png" alt="" width="500"/>
 
 ## 2. Clean old extensions
 
--   You can skip this section if you have never installed any extensions in your IDE
+-   You can **skip** this section if you have **never installed** any **extensions** in your IDE
 -   Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
 -   You can use uninstall_extensions.sh from this repo in order to remove all extensions. It is recommended if you have previously installed extensions.
 -   Make sure uninstall_extensions.sh has executable permissions, run this command: `ls -l uninstall_extensions.sh`. You should see "x" on the left hand side permissions file details section.
@@ -78,7 +92,7 @@ There are some extensions which will help to improve your development experience
 This repository also have other useful guides.
 
 | Topic | Location | Description |
-|------------------|---------------------|---------------------------------|
+|-------------------|----------------------|--------------------------------|
 | Python | [View Python README](./Python/README.md) | How to create a virtual environment and use it |
 | Positron | [View Positron README](./Positron/README.md) | How to prepare Positron IDE |
 | GitHub | [View GitHub README](./GitHub/README.md) | How to use GitHub with vs code/Positron |
@@ -90,14 +104,6 @@ This repository also have other useful guides.
 -   Go to the left hand side bar and click on extensions. Then, click on the vscode-icons extension (Positron compatible), click on set file icon theme and finally click on VSCode icons.
 
 <img src="./img/image-6.png" width="710"/>
-
-**How do I navigate to a folder on the stats drive to open a file?**
-
--   It is easy if you create a shortcut (symbolic link). You need to open a terminal and run this command: ln -s /conf/my_path /mnt/homes/your_user/name_for_your_shortcut
-
--   You must initialise your VS Code and go to the menu (top left) or simply press ctrl + k + o. I recommend opening a folder because projects need to be organized, and you can easily access all those files in the Explorer tab.
-
--   If you have a Python virtual environment you have to open your folder, open a terminal and activate it.
 
 **How do I specify where I want to save a script?**
 

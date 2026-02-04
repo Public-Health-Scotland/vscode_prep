@@ -66,7 +66,10 @@ These packages are the most popular and you can customise your own **requirement
 - plotly is powerfull for data visualisation (bar, line and other plots)
 - scikit-learn is useful for machine learning models (decision tree, random forest, support vector machine and others)
 - pillow is needed when working with images
-- jupyterlab is needed when working with Jupyter notebooks
+- ipykernel is needed to run cells in a Jupyter notebooks
+- jupyter-client is needed to see graphs in a Jupyter notebooks
+- nbformat is needed to read and write Jupyter notebooks
+- nbconvert is needed to convert Jupyter notebooks to other formats like HTML.
 
 You can install more packages later. For example:
 - geopandas is powerfull when working with maps
