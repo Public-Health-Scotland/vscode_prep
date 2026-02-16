@@ -18,11 +18,11 @@ This repo helps to prepare your VS Code 1.102.0 (Python and/or R) in the new Pos
 -   Then you have to open your project folder using vs code/Positron. Go to the left hand menu and click on the explorer icon. <img src="./img/image-0.png" alt="Explorer Icon" width="50"/>
 -   Click an Open Folder button. You will see a drop down list. You can click on stats_link, then click on vscode_prep folder and then click OK.
 
-<img src="./img/image-26.png" width="500"/>
+<img src="./img/image-26.png" width="650"/>
 
-<img src="./img/image-27.png" width="500"/>
+<img src="./img/image-27.png" width="650"/>
 
-<img src="./img/image-28.png" width="500"/>
+<img src="./img/image-28.png" width="650"/>
 
 ## 2. Clean old extensions
 
