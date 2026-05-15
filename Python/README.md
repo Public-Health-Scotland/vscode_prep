@@ -31,7 +31,7 @@ mkdir python_demo
 | 3.11.15 | `uv venv --python /opt/python/3.11.15/bin/python3 .venv` | `/opt/python/3.11.15/bin/python3 -m venv .venv` | 
 
 * Why is the Python 3.14.x command shorter and doesn’t require the --python argument? Because Python 3.14 is set as the default interpreter in this Posit Workbench environment.
-* How do I create a global virtual environment? Simply replace .venv with an absolute path, for example: uv venv --python /opt/python/3.x.x/bin/python3 /mnt/homes/your_user/.venv
+* How do I create a global virtual environment? Simply replace .venv with an absolute path, for example: `uv venv --python /opt/python/3.x.x/bin/python3 /mnt/homes/your_user/.venv`
 
 - It is important to know Python versions end of support: https://devguide.python.org/versions/
 - It's time to activate your virtual environment (.venv). You need to activate it through the terminal. Open a terminal (Ctrl + Shift + `) if there isn’t one at the bottom of the VS Code/Positron interface.
