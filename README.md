@@ -14,7 +14,7 @@ This repo helps to prepare your VS Code 1.102.0 (Python and/or R) in the new Pos
 -   Launch a vs code/Positron session and open a terminal using ctrl + shift + '
 -   Navigate to your stats drive link running this command: `cd stats_link` or `cd /mnt/homes/<your_username>/stats_link`
 -   Clone this repo running this command: `git clone https://github.com/Public-Health-Scotland/vscode_prep.git`
--   There are more useful GitHub commands here [View GitHub Folder README](GitHub/README.md)
+-   There are more useful GitHub commands. Check [More guides](#more-guides) GitHub link.
 -   Then you have to open your project folder using vs code/Positron. Go to the left hand menu and click on the explorer icon. <img src="./img/image-0.png" alt="Explorer Icon" width="50"/>
 -   Click an Open Folder button. You will see a drop down list. You can click on stats_link, then click on vscode_prep folder and then click OK.
 
@@ -43,24 +43,24 @@ This repo helps to prepare your VS Code 1.102.0 (Python and/or R) in the new Pos
 
 There are some extensions which will help to improve your development experience. The script called “install_extensions.sh” will automate the installation process. You can modify this file depending on your needs. These are the most used extensions you can find in the script:
 
-| Extension          | Description                                     |
-|--------------------|-------------------------------------------------|
-| ms-python.python   | Python support                                  |
-| ms-python.debugpy  | Python debbuger                                 |
-| ms-pyright.pyright | Fast static type checker for Python             |
-| quarto.quarto      | Support for Quarto documents and publishing     |
-| autodocstring      | autogenerate functions documentation            |
-| ms-toolsai.jupyter | Jupyter Notebooks support                       |
-| jupyter-renderers  | improves plot support in notebooks              |
-| prettier-vscode    | Formatter for many type of files extensions     |
-| rainbow-csv        | It helps to see your CSV files in a nicer way   |
-| gitlens            | It gives you more details about you GitHub repo |
-| code-runner        | It gives you more details about you GitHub repo |
-| Air - R            | Support for R language                          |
-| shiny              | Support for shiny projects                      |
-| Ruff               | Fast Python linter and formatter                |
-| shiny UIEditor     | Posit extension to blue print shiny apps.       |
-| draw.io            | useful extension to create workflow diagrams    |
+| Extension          | Description                                             |
+|--------------------|---------------------------------------------------------|
+| ms-python.python   | Python support                                          |
+| ms-python.debugpy  | Python debbuger                                         |
+| meta.pyrefly       | fast type checking, autocomplete and other IDE features |
+| quarto.quarto      | Support for Quarto documents and publishing             |
+| autodocstring      | autogenerate functions documentation                    |
+| ms-toolsai.jupyter | Jupyter Notebooks support                               |
+| jupyter-renderers  | improves plot support in notebooks                      |
+| prettier-vscode    | Formatter for many type of files extensions             |
+| rainbow-csv        | CSV nice view format (no need for Positron)             |
+| gitlens            | It gives you more details about you GitHub repo         |
+| code-runner        | Run your code line by line (no needed in Positron)      |
+| Air - R            | Support for R language                                  |
+| shiny              | Support for shiny projects                              |
+| Ruff               | Fast Python linter and formatter                        |
+| shiny UIEditor     | Posit extension to blue print shiny apps.               |
+| draw.io            | useful extension to create workflow diagrams            |
 
 ## How to run this bash
 
