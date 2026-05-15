@@ -1,5 +1,8 @@
 # **Prepare your VS Code/Positron for Python**
 
+[![GitHub tag (latest by
+date)]( https://img.shields.io/github/v/tag/Public-Health-Scotland/vscode_prep)]( https://github.com/Public-Health-Scotland/vscode_prep/tags)
+
 This repo helps to prepare your VS Code 1.102.0 (Python and/or R) in the new Posit. These steps are also compatible with Positron (2025.08.1 build 11).
 
 ## Pre requisites
