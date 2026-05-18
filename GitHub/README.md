@@ -32,6 +32,12 @@ Note: Files/folders listed in .gitignore will have a gray colour in your Explore
 -   If you want to list changes in the current branch: `git status` ![alt text](img/image-3.png)
 -   If you want to restore a file, you can use the listed changes from git status command to copy file path. For example I will restore README.md file from GitHub folder: `git restore GitHub/README.md`
 
+### If you want to undo the last commit in your locally cloned repo:
+Let's assume you cloned a repo and you locally staged and commited in the main branch, you can undo this commit but keep changes using this command: `git reset --soft HEAD~1`
+
+### If you want to remove all changes in your locally cloned repo
+Let's suppose you want to reset your local branch to match the remote one e.g. main branch (you will loose all changes): `git reset --hard origin/main`
+
 ## If you transfer a repo from your account to an organisation account
 
 -   Use this command in terminal to check the current url in your local folder: `git remote -v`
@@ -40,7 +46,7 @@ Note: Files/folders listed in .gitignore will have a gray colour in your Explore
 -   Run this command in terminal to set the new orgnaisation github repo: `git remote set-url origin https://github.com/<your_org>/<repo_name>.git`
 -   You can see the changes if you run this command again: `git remote -v`
 
-## Git auto completion in Terminal
+## Git auto completion in Terminal (Optional feature)
 
 If you want to add git autocompletion command feature in your terminal you can follow the following steps:
 
