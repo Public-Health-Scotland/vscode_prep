@@ -31,11 +31,10 @@ BASE_URL=(
   "https://open-vsx.org/api/ms-toolsai/jupyter-keymap/1.1.2/file/ms-toolsai.jupyter-keymap-1.1.2.vsix"
   "https://open-vsx.org/api/vscode-icons-team/vscode-icons/12.18.0/file/vscode-icons-team.vscode-icons-12.18.0.vsix"
   "https://open-vsx.org/api/esbenp/prettier-vscode/12.2.0/file/esbenp.prettier-vscode-12.2.0.vsix"
-  "https://open-vsx.org/api/eamodio/gitlens/2026.5.40551/file/eamodio.gitlens-2026.5.40551.vsix"
+  "https://open-vsx.org/api/eamodio/gitlens/2026.5.180137/file/eamodio.gitlens-2026.5.180137.vsix"
   "https://open-vsx.org/api/posit/air-vscode/linux-x64/0.24.0/file/posit.air-vscode-0.24.0@linux-x64.vsix"
   "https://open-vsx.org/api/posit/shiny/1.4.1/file/posit.shiny-1.4.1.vsix"
   "https://open-vsx.org/api/quarto/quarto/1.131.0/file/quarto.quarto-1.131.0.vsix"
-  "https://open-vsx.org/api/ms-pyright/pyright/1.1.402/file/ms-pyright.pyright-1.1.402.vsix"
   "https://open-vsx.org/api/meta/pyrefly/linux-x64/0.63.1/file/meta.pyrefly-0.63.1@linux-x64.vsix"
   "https://open-vsx.org/api/charliermarsh/ruff/linux-x64/2026.40.0/file/charliermarsh.ruff-2026.40.0@linux-x64.vsix"
   "https://open-vsx.org/api/posit/shinyuieditor/0.5.0/file/posit.shinyuieditor-0.5.0.vsix"
@@ -70,8 +69,7 @@ elif [ "$ide" == "positron" ]; then
     echo "You selected Positron"
 
     POSIT_URL=(
-      "https://open-vsx.org/api/posit/publisher/linux-x64/1.36.0/file/posit.publisher-1.27.10@linux-x64.vsix"
-      "https://open-vsx.org/api/posit/publisher/2.5.1/file/posit.publisher-2.5.1.vsix"
+      "https://open-vsx.org/api/posit/publisher/2.5.9/file/posit.publisher-2.5.9.vsix"
     )
 
     BASE_URL=( "${BASE_URL[@]}" "${POSIT_URL[@]}" )
