@@ -25,7 +25,7 @@ mkdir python_demo
 
 | Python  | UV (inside your project)                                 | Classic PIP (inside your project)               |
 |---------|----------------------------------------------------------|-------------------------------------------------|
-| 3.14.4  | `uv venv .venv`                                          | `python -m venv .venv`                          |
+| 3.14.5  | `uv venv .venv`                                          | `python -m venv .venv`                          |
 | 3.13.13 | `uv venv --python /opt/python/3.13.13/bin/python3 .venv` | `/opt/python/3.13.13/bin/python3 -m venv .venv` |
 | 3.12.13 | `uv venv --python /opt/python/3.12.13/bin/python3 .venv` | `/opt/python/3.12.13/bin/python3 -m venv .venv` |
 | 3.11.15 | `uv venv --python /opt/python/3.11.15/bin/python3 .venv` | `/opt/python/3.11.15/bin/python3 -m venv .venv` | 
