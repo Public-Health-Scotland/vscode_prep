@@ -65,7 +65,7 @@ if [ "$ide" == "vscode" ]; then
     BASE_URL=( "${BASE_URL[@]}" "${VS_URL[@]}" )
 elif [ "$ide" == "positron" ]; then
     # for positron
-    PWB_APP="/usr/lib/rstudio-server/bin/positron-server/bin/positron-server"
+    PWB_APP="/usr/lib/rstudio-server/bin/positron-server/bundled/bin/positron-server"
     echo "You selected Positron"
 
     POSIT_URL=(

@@ -15,7 +15,7 @@ if [ "$ide" == "vscode" ]; then
     PWB_APP="/usr/lib/rstudio-server/bin/pwb-code-server/bin/code-server"
 elif [ "$ide" == "positron" ]; then
     # for positron
-    PWB_APP="/usr/lib/rstudio-server/bin/positron-server/bin/positron-server"
+    PWB_APP="/usr/lib/rstudio-server/bin/positron-server/bundled/bin/positron-server"
 else
     echo "Unknown IDE: $ide"
     exit 1
