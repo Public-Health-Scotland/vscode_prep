@@ -31,7 +31,7 @@ BASE_URL=(
   "https://open-vsx.org/api/ms-toolsai/jupyter-keymap/1.1.2/file/ms-toolsai.jupyter-keymap-1.1.2.vsix"
   "https://open-vsx.org/api/vscode-icons-team/vscode-icons/12.18.0/file/vscode-icons-team.vscode-icons-12.18.0.vsix"
   "https://open-vsx.org/api/esbenp/prettier-vscode/12.4.0/file/esbenp.prettier-vscode-12.4.0.vsix"
-  "https://open-vsx.org/api/eamodio/gitlens/2026.5.180137/file/eamodio.gitlens-2026.5.180137.vsix"
+  "https://open-vsx.org/api/eamodio/gitlens/2026.5.290623/file/eamodio.gitlens-2026.5.290623.vsix"
   "https://open-vsx.org/api/posit/air-vscode/linux-x64/0.24.0/file/posit.air-vscode-0.24.0@linux-x64.vsix"
   "https://open-vsx.org/api/posit/shiny/1.4.1/file/posit.shiny-1.4.1.vsix"
   "https://open-vsx.org/api/quarto/quarto/1.132.0/file/quarto.quarto-1.132.0.vsix"
