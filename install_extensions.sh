@@ -32,7 +32,7 @@ BASE_URL=(
   "https://open-vsx.org/api/vscode-icons-team/vscode-icons/12.15.0/file/vscode-icons-team.vscode-icons-12.15.0.vsix"
   "https://open-vsx.org/api/esbenp/prettier-vscode/11.0.0/file/esbenp.prettier-vscode-11.0.0.vsix"
   "https://open-vsx.org/api/mechatroner/rainbow-csv/3.3.0/file/mechatroner.rainbow-csv-3.3.0.vsix"
-  "https://open-vsx.org/api/eamodio/gitlens/2026.3.423/file/eamodio.gitlens-2026.3.423.vsix"
+  "https://open-vsx.org/api/eamodio/gitlens/2026.6.20636/file/eamodio.gitlens-2026.6.20636.vsix"
   "https://open-vsx.org/api/posit/air-vscode/linux-x64/0.16.0/file/posit.air-vscode-0.16.0@linux-x64.vsix"
   "https://open-vsx.org/api/posit/shiny/1.3.1/file/posit.shiny-1.3.1.vsix"
   "https://open-vsx.org/api/quarto/quarto/1.126.0/file/quarto.quarto-1.126.0.vsix"
