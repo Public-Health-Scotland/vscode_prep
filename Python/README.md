@@ -78,93 +78,27 @@ You can install more packages later. For example:
 - duckdb is a powerfull embedded database for analytical purposes
 - tensorflow is very popular for neural networks (deep learning)
 
-### Alternative conda environments - only if you need it
-- Use your vscode or R studio terminal to download miniconda: `wget -P /mnt/homes/your_user/ https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
-- Give execution permission to the script: `chmod +x /mnt/homes/your_user/Miniconda3-latest-Linux-x86_64.sh`
-- Run the script file (Follow the installation steps): `bash /mnt/homes/your_user/Miniconda3-latest-Linux-x86_64.sh`
-- Activate your base conda: `source /mnt/homes/your_user/miniconda3/bin/activate `
-- You will be able to create your conda environment (you can directly add packages to the creation command). This command creates a conda environment called envtest: `conda create -n envtest python=3.11.9 pandas=2.2.3` or `conda create -n envtest python=3.11.9`
-- You should activate your env (one of them). You will see your env name between parentheses: `conda activate envtest`
-- You can install more packages (Your conda env must be activated): `conda install pandas=2.2.3`
-- Check your packages: `conda list`
-- You can use pip for packages which are not available via conda. You need to know your conda environment path using this command: `conda env list`
-- You need to use your conda environment path like this: `/mnt/homes/your_user/miniconda3/envs/envtest/bin/pip install package_name==package_version`
-- it would be similar if you want to run a py script in this specific conda environment. If your script is called demo.py you can use the following command: `/mnt/homes/your_user/miniconda3/envs/envtest/bin/python project_path/demo.py`
+### Working with jupyter notebook files in your own environment
+- When you work with jupyter notebooks (.ipynb), make sure to click on the select kernel (dropdown right hand side) and choose your environment name.
+- Click on Python environments
+- Select your local .venv (in this case the project folder environment)
+- If your project only have (.py) Python scripts, make sure to select the proper interpreter. Press ctrl + shift + p and search Python select interpreter
 
-## 7 common Python mistakes we should avoid in production code:
-- Type Hints
-```python
-# Mistake:
-def add(x, y):
-    return x + y
-# Fix:
-def add(x: int, y: int) -> int:
-    return x + y
-```
-Comment: Functions become harder to understand, refactor, or use Without type hints. Type hints make code self-documenting and are a gateway to tools like mypy and better IDE support.
-- Using Mutable Default Arguments
-```python
-# Mistake:
-def append_item(item, items=[]):
-    items.append(item)
-    return items`
-# Fix:
-`def append_item(item, items=None):
-    if items is None:
-        items = []
-    items.append(item)
-    return items
-```
-Comment: The default list is shared across all function calls. This leads to odd behavior and hard-to-trace bugs. So, avoid mutable default arguments unless you really know what you’re doing.
-- Overusing List Comprehensions
-```python
-# Mistake:
-result = [transform(x) for x in some_large_iterable if condition(x)]
-# Fix:
-for x in some_large_iterable:
-    if condition(x):
-        yield transform(x)
-```
-Comment: List comprehensions are elegant, but they can become unreadable or memory-intensive with complex logic or large data sets. Use regular loops when readability or memory is a concern.
-- Catching Bare Exceptions
-```python
-# Mistake:
-try:
-    do_something()
-except:
-    handle_error()
-# Fix:
-try:
-    do_something()
-except ValueError as e:
-    handle_value_error(e)
-```
-Comment: Catching all exceptions (KeyboardInterrupt, SystemExit, and MemoryError) can hide serious problems and make debugging difficult. Be specific in your exception handling. It makes code safer and easier to debug.
-- Misusing print
-```python
-# Mistake:
-print("Something went wrong")
-# Fix:
-import logging
+### Other Python related content
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-logger.info("Something went wrong")
-```
-Comment: print is fine for debugging but useless in a real-world environment where logs matter. Logging is your best friend in production. Use it early and often.
-- Monolithic Functions
-```python
-# Mistake:
-def process_data():
-    # 50+ lines doing many things
-# Fix:
-def fetch_data(): ...
-def clean_data(): ...
-def transform_data(): ...
-def save_data(): ...
-```
-Comment: Monolithic functions are hard to test, debug, and maintain. Break down functionality into smaller, reusable functions.
+| Topic                     | Location                                                   | Description                                         |
+|---------------------------|------------------------------------------------------------|-----------------------------------------------------|
+| coding tips               | [View coding tips README](./tips/README.md)                | Best practices when coding                          |
+| conda environments        | [View conda environments README](./conda/README.md)        | For those projects which need conda env             |
+| package installation test | [View package installation test README](./tests/README.md) | Test Python package installation performance in PHS |
 
-## Test package installation speed
-- Run installing_on_linux.sh to test package installation speed on Linux.
-- Run installing_on_windows.bat to test package installation speed on Windows.
+
+### Python projects examples
+
+- [Python project which connects to DENODO/SMRA](https://github.com/Public-Health-Scotland/python_demo_databases)
+
+- [Quarto Python project](https://github.com/Public-Health-Scotland/test_python_quarto)
+
+- [Python shiny project](https://github.com/Public-Health-Scotland/shiny_python_demo)
+
+- [Video Presentation about Python](https://vimeo.com/1140086541)
