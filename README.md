@@ -98,6 +98,7 @@ This repository also have other useful guides.
 |----|----|----|
 | Python | [View Python README](./Python/README.md) | How to create a virtual environment and use it |
 | Positron | [View Positron README](./Positron/README.md) | How to prepare Positron IDE |
+| Deployment Posit Connect or Posit Connect cloud | [View Deployment README](./Deployment/README.md) | Steps to deploy your Shiny/Quarto project to a server |
 | GitHub | [View GitHub README](./GitHub/README.md) | How to use GitHub with vs code/Positron |
 
 # **Frequently asked questions**
