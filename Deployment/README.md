@@ -38,7 +38,8 @@ This option only works for Positron in Posit Workbench. All the steps are done u
 
 -   Choose **Posit Connect** as deployment target since we have access to PHS Posit Connect. Cupy and past the PHS Posit Connect URL: `https://pc-prod.publichealthscotland.org/`and press enter to continue.
 
--   Choose the API key option for authentication. Copy and paste your API key created in PHS Posit Connect and press enter to continue.
+-   You need to go to Posit connect website, login with your user. Then, click on the user name (right hand side corner), click on Manage your API Keys, click on new API key, select Publisher permissions and click on Generate Key. Don't forget to copy that key.
+-   Back in Positron (PWB), choose the API key option for authentication. Copy and paste your API key created in PHS Posit Connect and press enter to continue.
 -   Type a unique nickname for this server connection. For example: **mypc** and press enter to continue. You can reuse the same connection for different projects deployment.
 -   If the app has already been deployed to PHS Posit Connect (**previously deployed by someone**), go to deployment tab and click on **update that previous deployment**. You should copy the direct link of the app in PHS Posit Connect. It may be something like this: `https://pc-prod.publichealthscotland.org/content/xxxx-xxx-xxxx-xxxx-xxxxxxxxx/` and press enter to continue.
 -   You should go to Posit Publisher - Project files section and select the required files for deployment. It is recommended to create a folder content table with **to deploy** column (in your project folder README.md file)
