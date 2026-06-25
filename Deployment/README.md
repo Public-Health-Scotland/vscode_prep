@@ -48,14 +48,28 @@ This option only works for Positron in Posit Workbench. All the steps are done u
 -   There are folders created as logs (part of the deployment session). They are useful to quickly and easily re deploy our projects. For example, if we have some updates to do, we only need to click on **Deploy your Project**
 
 ## Folders created in your current project folder
-We can delete these folders but we will need to follow the previous steps to deploy again.
+We can delete these folders but we will need to follow the previous steps to deploy again. 
 
 | Deployment tool  | Folder           |
 |------------------|------------------|
 | Posit publisher  | .posit           |
 | rsconnect-python | rsconnect-python |
 
-## Exclude deployment folders
+## Exclude unnecesary folder/files when deploying an app
+It is important not to deploy unnecesary folders/files. For example:
+
+| Folder                      |                   |
+|-----------------------------|-------------------|
+| .posit and rsconnect-python | No need to be deployed those deployment logs folders |
+| .env and renv folders       | Python or R virtual environment are not needed to be deployed |
+| .env file                   | This setting file is not required to be deployed since Posit Publisher has a section Secret to set sensitive data |
+| README.md                   | This is not needed since it works more for GitHub or as a guide/tutorial |
+| LICENSE                     | This is not needed since it is a common file on GitHub |
+| .gitignore                  | This is not needed since it is only needed on GitHub |
+
+You can always ask for some advice
+
+## Exclude deployment folders on GitHub
 
 If your project is on GitHub you should add these folders to the .gitignore file:
 
@@ -63,3 +77,6 @@ If your project is on GitHub you should add these folders to the .gitignore file
 .posit
 rsconnect-python
 ```
+
+## Troubleshooting
+-  If your Posit Publisher does not detect your previous deployed .posit foder you can close that session and open a new one.
