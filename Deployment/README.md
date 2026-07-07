@@ -10,7 +10,7 @@ There are some possible places where we can deploy our projects
 There are 2 tools to deploy an app but it will depends on your project
 
 | Deployment tool | Description |
-|-------------------------|----------------------------------------------|
+|--------------------------|----------------------------------------------|
 | Posit publisher | Easy UI to deploy R/Python apps. Currently only available in Positron |
 | rsconnect-python | Commands in terminal to deploy Python apps. It works in VSCode/Positron/RStudio terminal tab |
 
@@ -52,7 +52,9 @@ This option only works with Positron in Posit Workbench. All steps are performed
 
 ![](./img/image-2.png)
 
--   Go to the *Posit Publisher* → *Project Files* section and select the files required for deployment. It is recommended to include a content table with a "Deploy" column in your project's `README.md` file to help identify which files should be deployed. ![](./img/image-5.png)
+-   Go to the *Posit Publisher* → *Project Files* section and select the files required for deployment. It is recommended to include a content table with a "Deploy" column in your project's `README.md` file to help identify which files should be deployed.
+
+![](./img/image-5.png)
 
 -   (Optional) If your project requires credentials, such as tokens or passwords, store them in the *Secrets* section. Your R/Python code should access these secrets through environment variables.
 
