@@ -38,9 +38,9 @@ This option only works with Positron in Posit Workbench. All steps are performed
 
 ![](./img/image-1.png)
 
--   Choose **Posit Connect** as deployment target since we have access to PHS Posit Connect. Cupy and past the PHS Posit Connect URL: `https://pc-prod.publichealthscotland.org/`and press enter to continue.
+-   Choose **Posit Connect** as deployment target since we have access to PHS Posit Connect. Cupy and paste the PHS Posit Connect URL: `https://pc-prod.publichealthscotland.org/`and press enter to continue.
 
--   Go to the Posit Connect website and sign in with your account. Then, click your username in the top-right corner and select *Manage Your API Keys*. Click *New API Key*, choose *Publisher* permissions, and then click *Generate Key*. Be sure to copy the generated API key.
+-   Go to the Posit Connect website and sign in with your account. Then, click your username in the top-right corner and select *Manage Your API Keys*. Click *New API Key*, choose *Publisher* permissions, and then click on *Generate Key*. Be sure to copy the generated API key.
 
 ![](./img/image-3.png)
 
