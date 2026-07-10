@@ -101,4 +101,6 @@ You can install more packages later. For example:
 
 - [Python shiny project](https://github.com/Public-Health-Scotland/shiny_python_demo)
 
+- [Python project connecting with SFTP](https://github.com/Public-Health-Scotland/test_sftp)
+
 - [Video Presentation about Python](https://vimeo.com/1140086541)
