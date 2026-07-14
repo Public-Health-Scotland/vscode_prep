@@ -62,7 +62,6 @@ There are some extensions which will help to improve your development experience
 | Air - R            | Support for R language                          |
 | shiny              | Support for shiny projects                      |
 | Ruff               | Fast Python linter and formatter                |
-| shiny UIEditor     | Posit extension to blue print shiny apps.       |
 | draw.io            | useful extension to create workflow diagrams    |
 
 ## How to run this bash

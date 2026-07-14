@@ -21,6 +21,7 @@ unset NODE_EXTRA_CA_CERTS
 
 # base extensions
 BASE_URL=(
+  "https://open-vsx.org/api/vscode-icons-team/vscode-icons/12.19.0/file/vscode-icons-team.vscode-icons-12.19.0.vsix"
   "https://open-vsx.org/api/ms-python/python/2025.16.0/file/ms-python.python-2025.16.0.vsix"
   "https://open-vsx.org/api/ms-python/debugpy/linux-x64/2025.14.1/file/ms-python.debugpy-2025.14.1@linux-x64.vsix"
   "https://open-vsx.org/api/njpwerner/autodocstring/0.6.1/file/njpwerner.autodocstring-0.6.1.vsix"
@@ -29,7 +30,6 @@ BASE_URL=(
   "https://open-vsx.org/api/ms-toolsai/vscode-jupyter-slideshow/0.1.6/file/ms-toolsai.vscode-jupyter-slideshow-0.1.6.vsix"
   "https://open-vsx.org/api/ms-toolsai/vscode-jupyter-cell-tags/0.1.9/file/ms-toolsai.vscode-jupyter-cell-tags-0.1.9.vsix"
   "https://open-vsx.org/api/ms-toolsai/jupyter-keymap/1.1.2/file/ms-toolsai.jupyter-keymap-1.1.2.vsix"
-  "https://open-vsx.org/api/vscode-icons-team/vscode-icons/12.15.0/file/vscode-icons-team.vscode-icons-12.15.0.vsix"
   "https://open-vsx.org/api/esbenp/prettier-vscode/11.0.0/file/esbenp.prettier-vscode-11.0.0.vsix"
   "https://open-vsx.org/api/mechatroner/rainbow-csv/3.3.0/file/mechatroner.rainbow-csv-3.3.0.vsix"
   "https://open-vsx.org/api/eamodio/gitlens/2026.7.90246/file/eamodio.gitlens-2026.7.90246.vsix"
@@ -38,7 +38,6 @@ BASE_URL=(
   "https://open-vsx.org/api/quarto/quarto/1.126.0/file/quarto.quarto-1.126.0.vsix"
   "https://open-vsx.org/api/ms-pyright/pyright/1.1.402/file/ms-pyright.pyright-1.1.402.vsix"
   "https://open-vsx.org/api/charliermarsh/ruff/linux-x64/2025.28.0/file/charliermarsh.ruff-2025.28.0@linux-x64.vsix"
-  "https://open-vsx.org/api/posit/shinyuieditor/0.5.0/file/posit.shinyuieditor-0.5.0.vsix"
   "https://open-vsx.org/api/hediet/vscode-drawio/1.6.6/file/hediet.vscode-drawio-1.6.6.vsix"
 )
 
@@ -69,7 +68,7 @@ elif [ "$ide" == "positron" ]; then
     echo "You selected Positron"
 
     POSIT_URL=(
-      "https://open-vsx.org/api/posit/publisher/linux-x64/1.27.10/file/posit.publisher-1.27.10@linux-x64.vsix"
+      "https://open-vsx.org/api/posit/publisher/linux-x64/1.32.0/file/posit.publisher-1.32.0@linux-x64.vsix"
     )
 
     BASE_URL=( "${BASE_URL[@]}" "${POSIT_URL[@]}" )
