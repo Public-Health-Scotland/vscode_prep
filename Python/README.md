@@ -1,15 +1,15 @@
 # Python
-You can run Python code in VS code and Positron. They could be in .py files or Jupyter Notebooks (.ipynb).
+Python code can be executed in VS Code and Positron, using either standard .py files or Jupyter Notebooks (.ipynb).
 
 ## Python venv creation
-You can use venv (similar to renv in R) to create environments (private package container). 
-- If you cloned vscode_prep, you should close vscode_prep and start from the main user path.
+You can use venv (similar to renv in R) to create isolated environments that act as private package containers.
+- If you cloned vscode_prep, close it and start from your main user path.
 ![](./img/image-23.png)
-- You can create as many venv as you need and It depends on your Python version needs. 
+- You can create as many virtual environments as you need; this depends on required Python versions. 
 - You can create inside your Python project or outside
 - Best practice says it is good to create one venv per project
 - Open a vscode session in Posit Workbench
-- Open a terminal on vscode (ctrl + shift + ')
+- Open a terminal on VS Code (Ctrl + Shift + ')
 - Create a folder for your new project (e.g python_demo). Use the following command in your terminal:
 ```
 mkdir python_demo
@@ -31,7 +31,7 @@ mkdir python_demo
 - This command will create an environment called .venv
 - It is important to know Python versions end of support: https://devguide.python.org/versions/
 - It's time to activate your personal virtual environment (venv). You need to activate it through the terminal. Open a terminal (Ctrl + Shift + `) if there isn’t one at the bottom of the VS Code/Positron interface.
-- You need to remember you venv folder name, run one of these commands to activate it: 
+- Remember your venv folder name, run one of these commands to activate it: 
 
 | Command (virtual env outside Project Folder)     | Command (Internal Project Folder) |
 |--------------------------------------------------|-----------------------------------|
@@ -43,7 +43,7 @@ mkdir python_demo
 - You have 2 options to install required packages (make sure your python environment is already activated). Best practice says it is important to have requirements.txt file in every Python project folder.
 - Create a requirements.txt file in your python_demo folder
 - Option 1: Using a requirements.txt to facilitate the process: `pip install -r requirements.txt --prefer-binary`
-- Option 2: Installing one package at time using the command in terminal: `pip install pandas==2.3.3 --prefer-binary`
+- Option 2: Installing one package at time using the command in terminal: `pip install pandas==3.0.5 --prefer-binary`
     
     Note: If you don't activate your python environment you will probably install your package in the main Python installation.
     
@@ -63,7 +63,7 @@ mkdir python_demo
 These packages are the most popular and you can customise your own **requirements.tx**t file depending on your project needs.
 - python-dotenv is useful when you want to separate sensitive data like usernames, password and others
 - pandas is useful for data manipulation (dataframes)
-- plotly is powerfull for data visualisation (bar, line and other plots)
+- plotly is powerful for data visualisation (bar, line and other plots)
 - scikit-learn is useful for machine learning models (decision tree, random forest, support vector machine and others)
 - pillow is needed when working with images
 - ipykernel is needed to run cells in a Jupyter notebooks
@@ -72,17 +72,17 @@ These packages are the most popular and you can customise your own **requirement
 - nbconvert is needed to convert Jupyter notebooks to other formats like HTML.
 
 You can install more packages later. For example:
-- geopandas is powerfull when working with maps
+- geopandas is powerful when working with maps
 - polars is faster than Pandas for large datasets
-- ipywidgets helps to create controls in jupyter notebooks like dropdownlists, radio buttons, buttons and others
-- duckdb is a powerfull embedded database for analytical purposes
+- ipywidgets helps to create controls in jupyter notebooks like dropdown lists, radio buttons, buttons and others
+- duckdb is a powerfulF embedded database for analytical purposes
 - tensorflow is very popular for neural networks (deep learning)
 
 ### Working with jupyter notebook files in your own environment
 - When you work with jupyter notebooks (.ipynb), make sure to click on the select kernel (dropdown right hand side) and choose your environment name.
 - Click on Python environments
 - Select your local .venv (in this case the project folder environment)
-- If your project only have (.py) Python scripts, make sure to select the proper interpreter. Press ctrl + shift + p and search Python select interpreter
+- If your project only has `.py` scripts, select the correct Python interpreter (ctrl + shift + p → Python: Select Interpreter).
 
 ### Other Python related content
 

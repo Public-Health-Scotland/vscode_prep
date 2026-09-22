@@ -1,181 +1,199 @@
-# **Prepare your VS Code/Positron for Python**
+# Prepare your VS Code / Positron for Python
 
-[![GitHub tag (latest by
-date)]( https://img.shields.io/github/v/tag/Public-Health-Scotland/vscode_prep)]( https://github.com/Public-Health-Scotland/vscode_prep/tags)
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Public-Health-Scotland/vscode_prep)](https://github.com/Public-Health-Scotland/vscode_prep/tags)
 
-This repo helps to prepare your VS Code 1.102.0 (Python and/or R) in the new Posit. These steps are also compatible with Positron (2025.08.1 build 11).
+This repository helps prepare VS Code (for Python and/or R) and the Posit IDE. These steps are compatible with Positron (2025.08.1, build 11).
 
-## Pre requisites
+## Prerequisites
 
--   You need to have access to VS Code or Positron in your stats drive.
--   It is important to **work on your stats drive** because you will have more space to install extensions and store your projects.
--   Create a symbolic link to your stats drive if you want to work easily with your files. You can do it using this command in a terminal: `ln -s /conf/<your_folder_path> /mnt/homes/<your_username>/stats_link`
--   You can change stats_link to any name you want. Don't forget to replace <your_folder_path> and <your_username> with your information.
+- You need access to VS Code or Positron on your stats drive.
+- It is recommended to work on your stats drive because you will have more space to install extensions and store projects.
+- Create a symbolic link to your stats drive if you want to work easily with your files. Run this command in a terminal:
+
+  `ln -s /conf/<your_folder_path> /mnt/homes/<your_username>/stats_link`
+
+- You can change `stats_link` to any name you prefer. Replace `<your_folder_path>` and `<your_username>` with your information.
 
 ## 1. Clone this repo
 
--   Launch a vs code/Positron session and open a terminal using ctrl + shift + '
--   Navigate to your stats drive link running this command: `cd stats_link` or `cd /mnt/homes/<your_username>/stats_link`
--   Clone this repo running this command: `git clone https://github.com/Public-Health-Scotland/vscode_prep.git`
--   There are more useful GitHub commands here [View GitHub Folder README](GitHub/README.md)
--   Then you have to open your project folder using vs code/Positron. Go to the left hand menu and click on the explorer icon. <img src="./img/image-0.png" alt="Explorer Icon" width="50"/>
--   Click an Open Folder button. You will see a drop down list. You can click on stats_link, then click on vscode_prep folder and then click OK.
+- Launch a VS Code / Positron session and open a terminal using Ctrl+Shift+`.
+- Navigate to your stats drive link:
 
-<img src="./img/image-26.png" width="650"/>
+  `cd stats_link`
 
-<img src="./img/image-27.png" width="650"/>
+  or
 
-<img src="./img/image-28.png" width="650"/>
+  `cd /mnt/homes/<your_username>/stats_link`
+
+- Clone this repository:
+
+  `git clone https://github.com/Public-Health-Scotland/vscode_prep.git`
+
+- There are more useful GitHub commands in [GitHub/README.md](GitHub/README.md).
+- Open the project folder in VS Code / Positron: click the Explorer icon, then choose Open Folder, select `stats_link`, then select the `vscode_prep` folder and click OK.
+
+<img src="./img/image-26.png" width="650" />
+
+<img src="./img/image-27.png" width="650" />
+
+<img src="./img/image-28.png" width="650" />
 
 ## 2. Clean old extensions
 
--   You can **skip** this section if you have **never installed** any **extensions** in your IDE
--   Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
--   You can use uninstall_extensions.sh from this repo in order to remove all extensions. It is recommended if you have previously installed extensions.
--   Make sure uninstall_extensions.sh has executable permissions, run this command: `ls -l uninstall_extensions.sh`. You should see "x" on the left hand side permissions file details section.
--   Execute in terminal depending on your IDE to uninstall all installed extensions:
+- You can skip this section if you have never installed extensions in your IDE.
+- Open a terminal in VS Code / Positron (Ctrl+Shift+`).
+- Use `uninstall_extensions.sh` from this repo to remove extensions; this is recommended if you've previously installed extensions.
+- Make sure `uninstall_extensions.sh` has executable permissions. Run:
+
+  `ls -l uninstall_extensions.sh`
+
+  You should see an "x" in the permissions column.
+- Execute the uninstall script for your IDE:
 
 | IDE      | Command                                 |
 |----------|-----------------------------------------|
-| vs code  | `bash uninstall_extensions.sh vscode`   |
-| positron | `bash uninstall_extensions.sh positron` |
+| VS Code  | `bash uninstall_extensions.sh vscode`   |
+| Positron | `bash uninstall_extensions.sh positron` |
 
--   You will see **Extensions removal completed!** in your terminal.
+- You should see **Extensions removal completed!** in your terminal when it finishes.
 
-## Extensions for vscode
+## Extensions for VS Code
 
-There are some extensions which will help to improve your development experience. The script called “install_extensions.sh” will automate the installation process. You can modify this file depending on your needs. These are the most used extensions you can find in the script:
+The script `install_extensions.sh` automates extension installation; you can modify it for your needs. The most used extensions in the script include:
 
-| Extension          | Description                                     |
-|--------------------|-------------------------------------------------|
-| ms-python.python   | Python support                                  |
-| ms-python.debugpy  | Python debbuger                                 |
-| ms-pyright.pyright | Fast static type checker for Python             |
-| quarto.quarto      | Support for Quarto documents and publishing     |
-| autodocstring      | autogenerate functions documentation            |
-| ms-toolsai.jupyter | Jupyter Notebooks support                       |
-| jupyter-renderers  | improves plot support in notebooks              |
-| prettier-vscode    | Formatter for many type of files extensions     |
-| rainbow-csv        | It helps to see your CSV files in a nicer way   |
-| gitlens            | It gives you more details about you GitHub repo |
-| code-runner        | It gives you more details about you GitHub repo |
-| Air - R            | Support for R language                          |
-| shiny              | Support for shiny projects                      |
-| Ruff               | Fast Python linter and formatter                |
-| draw.io            | useful extension to create workflow diagrams    |
+| Extension          | Description                                      |
+|--------------------|--------------------------------------------------|
+| ms-python.python   | Python language support                          |
+| ms-python.debugpy  | Python debugger                                  |
+| ms-pyright.pyright | Fast static type checker for Python              |
+| quarto.quarto      | Support for Quarto documents and publishing      |
+| autodocstring      | Automatically generate function docstrings       |
+| ms-toolsai.jupyter | Jupyter Notebooks support                        |
+| jupyter-renderers  | Improves plot support in notebooks               |
+| prettier-vscode    | Formatter for many file types                    |
+| rainbow-csv        | Makes CSV files easier to read                   |
+| gitlens            | Provides Git history and repository insights     |
+| code-runner        | Run code snippets from the editor                |
+| Air - R            | Support for R language                           |
+| shiny              | Support for Shiny projects                       |
+| Ruff               | Fast Python linter and formatter                 |
+| draw.io            | Create workflow diagrams                         |
 
-## How to run this bash
+## How to run the installer script
 
--   Open a terminal on vscode (ctrl + shift + ') if you haven't opened one yet.
+- Open a terminal in VS Code / Positron (Ctrl+Shift+`).
+- Make sure `install_extensions.sh` has executable permissions:
 
--   Make sure “install_extensions.sh” has executable permissions `ls -l install_extensions.sh`. You should see "x" on the left hand side permissions file details section.
+  `ls -l install_extensions.sh`
 
-![alt text](./img/image-7.png)
+  If you do not see an "x", make it executable:
 
--   If you cannot see the x you should change the permissions using `chmod +x install_extensions.sh`
+  `chmod +x install_extensions.sh`
 
--   Run in your terminal:
+<img src="./img/image-7.png" alt="Make script executable" />
+
+- Run the installer for your IDE:
 
 | IDE      | Command                                    |
 |----------|--------------------------------------------|
-| vs code  | `bash install_extensions.sh vscode base`   |
-| positron | `bash install_extensions.sh positron base` |
+| VS Code  | `bash install_extensions.sh vscode base`   |
+| Positron | `bash install_extensions.sh positron base` |
 
--   You will see **Installation completed!** in your terminal. So, it means everything worked ok.
+- You should see **Installation completed!** in the terminal if the installation succeeded.
+- Reload VS Code / Positron to activate the installed extensions: open the Command Palette (Ctrl+Shift+P) and choose "Developer: Reload Window." 
 
--   You need to reload your vs code/Positron to make sure loading extensions. Press ctrl + shift + p and search Developer reload window
+<img src="img/image-19.png" alt="Reload window" />
 
-![alt text](img/image-19.png)
-
--   (More extensions) There are some other extensions installers in this repo. One of them is jsoncrack. It would be installed from offline_installers folder because it was downloaded from the Official microsoft marketplace. This folder content is part of the bash script install_extensions.sh offline section bash file installer.
+- Some installers are provided offline in `offline_installers/`, for example `jsoncrack`. Those are packaged for offline installation as part of the script.
 
 ## More guides
 
-This repository also have other useful guides.
+This repository also has other useful guides.
 
 | Topic | Location | Description |
-|----|----|----|
-| Python | [View Python README](./Python/README.md) | How to create a virtual environment and use it |
-| Positron | [View Positron README](./Positron/README.md) | How to prepare Positron IDE |
-| Deployment Posit Connect or Posit Connect cloud | [View Deployment README](./Deployment/README.md) | Steps to deploy your Shiny/Quarto project to a server |
-| GitHub | [View GitHub README](./GitHub/README.md) | How to use GitHub with vs code/Positron |
+|-------|----------|-------------|
+| Python | [View Python README](./Python/README.md) | How to create and use a virtual environment |
+| Positron | [View Positron README](./Positron/README.md) | How to prepare the Positron IDE |
+| Deployment | [View Deployment README](./Deployment/README.md) | Steps to deploy Shiny/Quarto projects to a server |
+| GitHub | [View GitHub README](./GitHub/README.md) | How to use GitHub with VS Code / Positron |
 
-# **Frequently asked questions**
+# Frequently asked questions
 
-**How can I use the vscode-icons?**
+**How can I use the VSCode icons?**
 
--   Go to the left hand side bar and click on extensions. Then, click on the vscode-icons extension (Positron compatible), click on set file icon theme and finally click on VSCode icons.
+- Go to the Extensions view, open the VSCode Icons extension (Positron compatible), choose "Set File Icon Theme," and select "VSCode Icons."
 
-<img src="./img/image-6.png" width="710"/>
+<img src="./img/image-6.png" width="710" />
 
-**How do I specify where I want to save a script?**
+**How do I specify where to save a script?**
 
--   If you previously opened a folder, you can add files in the same folder using the Explorer tab. There are two options (new folder and new file). You can add .py (normal scripts) or .ipynb (jupyter notebook).
+- If you have opened a folder, add files in the same folder using the Explorer tab (New File or New Folder). You can create `.py` files (scripts) or `.ipynb` files (Jupyter notebooks).
 
-![alt text](./img/image.png)
+<img src="./img/image.png" alt="Create file" />
 
-**Is there an environment like there is with R where I can see what I've created?**
+**Is there an environment like R where I can see what I've created?**
 
--   If you are running a .ipynb file extension you can use Jupyter variable windows. You should go to the menu (top left) and select terminal – new terminal. After that, you click on Jupyter variables tab.
+- For `.ipynb` files you can use the Jupyter Variables window. Open a terminal (Terminal → New Terminal) and then open the Jupyter Variables tab.
 
-![alt text](./img/image-1.png)
+<img src="./img/image-1.png" alt="Jupyter variables" />
 
--   You can use the extension code runner (VS code) to run chunks of code. You need to select the lines of code and choose "run code" on the right-click menu or press ctrl + alt + n
+- Use the Code Runner extension (VS Code) to run code selections: select the lines, right-click and choose "Run Code" or press Ctrl+Alt+N.
 
-<img src="./img/image-2.png" width="620"/>
+<img src="./img/image-2.png" width="620" />
 
--   You can also use the console tab in Positron. Select the code you want to run and use ctrl + enter to run the code in the console tab.
+- In Positron you can use the Console pane. Select code and press Ctrl+Enter to run it in the console.
 
-![alt text](./img/image-3.png)
+<img src="./img/image-3.png" alt="Positron console" />
 
-**Can I use question mark to ask about functions?**
+**Can I use question marks to inspect functions?**
 
--   If you are using VS code (only with Jupyter notebooks files) you can use question mark (?) and double question mark (??) after the function to get some information like this:
+- In Jupyter notebooks you can use `?` and `??` after a function name to view help and source (where supported).
 
-<img src="./img/image-14.png" width="600"/>
+<img src="./img/image-14.png" width="600" />
 
--   If you are using Positron you can use ? and ?? after the function name in the console tab
+- In Positron you can use `?` and `??` in the Console tab.
 
-**Can I export a Jupyter notebook in HTML format?**
+**Can I export a Jupyter notebook to HTML?**
 
--   Yes, you can. Press ctr + shift + p and search Export to html
+- Yes. Open the Command Palette (Ctrl+Shift+P) and run "Export to HTML." 
 
-<img src="./img/image-15.png" width="444"/>
+<img src="./img/image-15.png" width="444" />
 
--   If you are working with Plotly you will need to add these lines of code at the beginnin of your Notebook: `import plotly.io as pio pio.renderers.default = 'notebook_connected'`
+- If you use Plotly in notebooks, add these lines at the beginning of your notebook:
 
-**How can I use JSON crack extension?**
+  ```python
+  import plotly.io as pio
+  pio.renderers.default = "notebook_connected"
+  ```
 
--   If you have a JSON file in your project and you can see the structure in a easy way, you neeed to open the file and go to the right-hand side corner. Press the JC icon:
+**How can I use the JSON Crack extension?**
 
-<img src="./img/image-4.png" width="305"/>
+- Open a JSON file in the editor and click the JC icon in the top-right corner of the editor to view the structure.
 
--   You will have a result like this:
+<img src="./img/image-4.png" width="305" />
 
-<img src="./img/image-5.png" width="589"/>
+<img src="./img/image-5.png" width="589" />
 
 **How can I format my files?**
 
--   Tou need to select all your code using `ctrl + a`
+- Select all code with Ctrl+A.
+- Right-click and choose "Format Document With..." For Python files you will see the option "Ruff"; for other files you will typically see "Prettier." Select the formatter to format the document.
 
--   Right click and choose Format document with - If it's a Python file, you will see the option "Ruff". Otherwise, you will see Prettier.
+<img src="./img/image-8.png" alt="Format document" />
 
--   Click on it and you will see your script being formatted. ![alt text](./img/image-8.png){width="596"}
+<img src="./img/image-9.png" width="315" />
 
-<img src="./img/image-9.png" width="315"/>
+**How can I create a diagram using draw.io?**
 
-**How can I create a diagrama using draw.io?**
+- Create a new file with the `.drawio.svg` extension.
 
--   You need to create a new file with the following extension .drawio.svg
+<img src="./img/image-24.png" width="325" />
 
-<img src="./img/image-24.png" width="325"/>
+- If the draw.io extension is installed you can open and edit that file.
+- Search the palette for icons and drag them onto the canvas.
 
--   If you already installed drawio extension you will be able to open that file
+<img src="./img/image-25.png" alt="draw.io palette" width="233" />
 
--   You can find different icons. Search by words in the textbox
+- You can embed a draw.io diagram in `README.md` like this:
 
-<img src="./img/image-25.png" alt="This image show the draw.io palette" width="233"/>
-
--   You can add your diagraman to a README.md file like this:
-
-![This is a diagram example using draw.io](diagrams/my_diagram.drawio.svg)
+  ![This is a diagram example using draw.io](diagrams/my_diagram.drawio.svg)
