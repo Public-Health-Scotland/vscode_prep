@@ -50,7 +50,7 @@ There are some extensions which will help to improve your development experience
 |--------------------|-------------------------------------------------|
 | ms-python.python   | Python support                                  |
 | ms-python.debugpy  | Python debbuger                                 |
-| ms-pyright.pyright | Fast static type checker for Python             |
+| meta.pyrefly       | provide language server features for Python     |
 | quarto.quarto      | Support for Quarto documents and publishing     |
 | autodocstring      | autogenerate functions documentation            |
 | ms-toolsai.jupyter | Jupyter Notebooks support                       |
@@ -63,6 +63,7 @@ There are some extensions which will help to improve your development experience
 | shiny              | Support for shiny projects                      |
 | Ruff               | Fast Python linter and formatter                |
 | draw.io            | useful extension to create workflow diagrams    |
+| aykutsarac.jsoncrack-vscode | Read json files and show a tree map    |
 
 ## How to run this bash
 
@@ -86,8 +87,6 @@ There are some extensions which will help to improve your development experience
 -   You need to reload your vs code/Positron to make sure loading extensions. Press ctrl + shift + p and search Developer reload window
 
 ![alt text](img/image-19.png)
-
--   (More extensions) There are some other extensions installers in this repo. One of them is jsoncrack. It would be installed from offline_installers folder because it was downloaded from the Official microsoft marketplace. This folder content is part of the bash script install_extensions.sh offline section bash file installer.
 
 ## More guides
 
