@@ -28,12 +28,26 @@ list_extension_ids() {
 }
 
 export NODE_OPTIONS="--no-deprecation"
+JUPYTER_REMOVED=false
 
-while (( $(list_extension_ids | wc -l) > 0 )); do
-  for ext in $(list_extension_ids); do
-    if ! "$PWB_APP" --uninstall-extension "$ext"; then
-      echo "*WARN: uninstall failed for $ext" >&2
-    fi
-  done
+for ext in $(list_extension_ids); do
+  # Skip Jupyter child extensions if parent already removed
+  if [ "$JUPYTER_REMOVED" = true ]; then
+      case "$ext" in
+          ms-toolsai.jupyter-renderers|\
+          ms-toolsai.vscode-jupyter-slideshow|\
+          ms-toolsai.vscode-jupyter-cell-tags|\
+          ms-toolsai.jupyter-keymap)
+              echo "Skipping $ext (removed with ms-toolsai.jupyter)"
+              continue
+              ;;
+      esac
+  fi
+  if ! "$PWB_APP" --uninstall-extension "$ext"; then
+    echo "*WARN: uninstall failed for $ext" >&2
+  fi
+  if [ "$ext" = "ms-toolsai.jupyter" ]; then
+      JUPYTER_REMOVED=true
+  fi
 done
 echo "Extensions removal completed!"
