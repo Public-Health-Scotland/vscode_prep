@@ -27,6 +27,8 @@ list_extension_ids() {
   | grep -E '^[a-z0-9.-]+\.[a-z0-9.-]+$|^[a-f0-9]{40,}$' 
 }
 
+export NODE_OPTIONS="--no-deprecation"
+
 while (( $(list_extension_ids | wc -l) > 0 )); do
   for ext in $(list_extension_ids); do
     if ! "$PWB_APP" --uninstall-extension "$ext"; then
