@@ -61,25 +61,24 @@ This repository helps prepare VS Code (for Python and/or R) and the Posit IDE. T
 
 The script `install_extensions.sh` automates extension installation; you can modify it for your needs. The most used extensions in the script include:
 
-| Extension          | Description                                      |
-|--------------------|--------------------------------------------------|
-| ms-python.python   | Python language support                          |
-| ms-python.debugpy  | Python debugger                                  |
-| ms-pyright.pyright | Fast static type checker for Python              |
-| quarto.quarto      | Support for Quarto documents and publishing      |
-| autodocstring      | Automatically generate function docstrings       |
-| ms-toolsai.jupyter | Jupyter Notebooks support                        |
-| jupyter-renderers  | Improves plot support in notebooks               |
-| prettier-vscode    | Formatter for many file types                    |
-| rainbow-csv        | Makes CSV files easier to read                   |
-| gitlens            | Provides Git history and repository insights     |
-| code-runner        | Run code snippets from the editor                |
-| Air - R            | Support for R language                           |
-| shiny              | Support for Shiny projects                       |
-| Ruff               | Fast Python linter and formatter                 |
-| draw.io            | Create workflow diagrams                         |
-
-## How to run the installer script
+| Extension          | Description                                     |
+|--------------------|-------------------------------------------------|
+| ms-python.python   | Python support                                  |
+| ms-python.debugpy  | Python debbuger                                 |
+| meta.pyrefly       | provide language server features for Python     |
+| quarto.quarto      | Support for Quarto documents and publishing     |
+| autodocstring      | autogenerate functions documentation            |
+| ms-toolsai.jupyter | Jupyter Notebooks support                       |
+| jupyter-renderers  | improves plot support in notebooks              |
+| prettier-vscode    | Formatter for many type of files extensions     |
+| rainbow-csv        | It helps to see your CSV files in a nicer way   |
+| gitlens            | It gives you more details about you GitHub repo |
+| code-runner        | It gives you more details about you GitHub repo |
+| Air - R            | Support for R language                          |
+| shiny              | Support for shiny projects                      |
+| Ruff               | Fast Python linter and formatter                |
+| draw.io            | useful extension to create workflow diagrams    |
+| aykutsarac.jsoncrack-vscode | Read json files and show a tree map    |
 
 - Open a terminal in VS Code / Positron (Ctrl+Shift+`).
 - Make sure `install_extensions.sh` has executable permissions:
@@ -104,7 +103,7 @@ The script `install_extensions.sh` automates extension installation; you can mod
 
 <img src="img/image-19.png" alt="Reload window" />
 
-- Some installers are provided offline in `offline_installers/`, for example `jsoncrack`. Those are packaged for offline installation as part of the script.
+![alt text](img/image-19.png)
 
 ## More guides
 
