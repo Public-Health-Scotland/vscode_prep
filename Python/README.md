@@ -1,16 +1,16 @@
 # Python
-You can run Python code in VS code and Positron. They could be in .py files or Jupyter Notebooks (.ipynb).
+Python code can be executed in VS Code and Positron, using either standard .py files or Jupyter Notebooks (.ipynb).
 
 ## Python venv creation
 Python virtual environments (venv), similar to renv in R, help keep projects isolated by managing dependencies separately. You can create a virtual environment using the traditional pip workflow or the newer uv commands.
 
 - If you cloned vscode_prep, you should close vscode_prep and start from the main user path.
 ![](./img/image-23.png)
-- You can create as many venv as you need and It depends on your Python version needs. 
+- You can create as many virtual environments as you need; this depends on required Python versions. 
 - You can create inside your Python project or outside
 - Best practice says it is good to create one venv per project
 - Open a vscode session in Posit Workbench
-- Open a terminal on vscode (ctrl + shift + ')
+- Open a terminal on VS Code (Ctrl + Shift + ')
 - Create a folder for your new project (e.g python_demo). Use the following command in your terminal:
 ```
 mkdir python_demo
@@ -39,6 +39,9 @@ mkdir python_demo
 | Inside your Project         | Outside your project                             |
 |-----------------------------|--------------------------------------------------|
 | `source .venv/bin/activate` | `source /mnt/homes/your_user/.venv/bin/activate` |
+=======
+- It's time to activate your personal virtual environment (venv). You need to activate it through the terminal. Open a terminal (Ctrl + Shift + `) if there isn’t one at the bottom of the VS Code/Positron interface.
+- Remember your venv folder name, run one of these commands to activate it: 
 
 - You will see .venv as part of the terminal line
 ![](./img/image-18.png)
@@ -52,7 +55,7 @@ mkdir python_demo
 | 1. No need to update pip neither install wheel                         | 1. Update pip and install wheel package: `pip install --upgrade pip wheel`          |
 | 2. Install from requirements.txt: `uv pip install -r requirements.txt` | 2. Install from requirements.txt: `pip install -r requirements.txt --prefer-binary` |
 | 3. Optionally per package: `uv pip install pandas==2.3.3`              | 3. Optionally per package: `pip install pandas==2.3.3 --prefer-binary`              |
-    
+
     Note: If you don’t activate your Python environment, you will probably install the package into the default global Python installation.
     
 - It is important to know packages versions for compatibility purposes, who develops this package (trusted sources) and how frequent they are updated: https://pypi.org/
@@ -62,7 +65,7 @@ mkdir python_demo
 These packages are the most popular and you can customise your own **requirements.tx**t file depending on your project needs.
 - python-dotenv is useful when you want to separate sensitive data like usernames, password and others
 - pandas is useful for data manipulation (dataframes)
-- plotly is powerfull for data visualisation (bar, line and other plots)
+- plotly is powerful for data visualisation (bar, line and other plots)
 - scikit-learn is useful for machine learning models (decision tree, random forest, support vector machine and others)
 - pillow is needed when working with images
 - ipykernel is needed to run cells in a Jupyter notebooks
@@ -77,7 +80,7 @@ These packages are the most popular and you can customise your own **requirement
 * Install and keep track of **only needed packages**. This will save space, which is an important PHS resource
 
 You can install more packages later. For example:
-- geopandas is powerfull when working with maps
+- geopandas is powerful when working with maps
 - polars is faster than Pandas for large datasets
 - ipywidgets helps to create controls in jupyter notebooks like dropdownlists, radio buttons, buttons and others
 - duckdb is a powerfull embedded database for analytical purposes
