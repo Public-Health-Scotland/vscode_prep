@@ -112,7 +112,6 @@ This repository also has other useful guides.
 | Topic | Location | Description |
 |-------|----------|-------------|
 | Python | [View Python README](./Python/README.md) | How to create and use a virtual environment |
-| Positron | [View Positron README](./Positron/README.md) | How to prepare the Positron IDE |
 | Deployment | [View Deployment README](./Deployment/README.md) | Steps to deploy Shiny/Quarto projects to a server |
 | GitHub | [View GitHub README](./GitHub/README.md) | How to use GitHub with VS Code / Positron |
 
