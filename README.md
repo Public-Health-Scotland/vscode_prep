@@ -2,7 +2,9 @@
 
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Public-Health-Scotland/vscode_prep)](https://github.com/Public-Health-Scotland/vscode_prep/tags)
 
-This repository helps prepare VS Code (for Python and/or R) and the Posit IDE. These steps are compatible with Positron (2025.08.1, build 11).
+This repository helps to prepare your Posit work bench IDEs upgrade **2026 November** to work with Python and/or R.
+- Positron 2026.08.0 build 331
+- VS Code 1.124.0
 
 ## Prerequisites
 
