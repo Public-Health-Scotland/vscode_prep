@@ -37,6 +37,7 @@ BASE_URL=(
   "hediet.vscode-drawio"
   "github.vscode-pull-request-github"
   "aykutsarac.jsoncrack-vscode"
+  "foam.foam-vscode"
 )
 
 # add java extensions
